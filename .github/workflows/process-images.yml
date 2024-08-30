@@ -3,7 +3,7 @@ name: Process Image on Commit
 on:
   push:
     paths:
-      - "photos/**/*.{jpg,jpeg,png}"  # Specify that all images within the 'photos' folder and its subfolders trigger the action
+      - "photos/**"  # Specify that all changes within the 'photos' folder and its subfolders trigger the action
 
 jobs:
   process_image:
