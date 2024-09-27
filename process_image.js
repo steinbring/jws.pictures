@@ -149,20 +149,24 @@ function getGitCommitInfo(filePath) {
 }
 
 async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath) {
+  const dir = path.dirname(imagePath);
+  const ext = path.extname(imagePath);
+  const baseNameWithOriginal = path.basename(imagePath, ext); // Includes '-original'
+  const baseName = baseNameWithOriginal.replace('-original', '');
+
+  // Extract ID (filename minus extension)
+  const id = baseName.split('.').slice(0, -1).join('.');
+
   const data = {
+    ID: id,
     filenames: imagePaths.map((p) => path.basename(p)),
     exif: exifData,
     location: commitInfo.commitSummary,
     description: commitInfo.commitDescription,
   };
 
-  const dir = path.dirname(imagePath);
-  const base = path.basename(imagePath, path.extname(imagePath)).replace(
-    '-original',
-    ''
-  );
-  const jsonPath = path.join(dir, `${base}.json`);
-  const xmlPath = path.join(dir, `${base}.xml`);
+  const jsonPath = path.join(dir, `${baseName}.json`);
+  const xmlPath = path.join(dir, `${baseName}.xml`);
 
   // Save JSON
   await fs.writeJson(jsonPath, data, { spaces: 4 });
@@ -172,7 +176,69 @@ async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath) {
   const xml = builder.buildObject({ metadata: data });
   await fs.writeFile(xmlPath, xml);
 
+  // Update aggregate files
+  await updateAggregateFiles(data, imagePath);
+
   return [jsonPath, xmlPath];
+}
+
+async function updateAggregateFiles(data, imagePath) {
+  const year = path.basename(path.dirname(imagePath));
+  const photosDir = path.join(path.dirname(imagePath), '..'); // Assuming /photos/[year]/image.jpg
+
+  // Paths for aggregate files
+  const allJsonPath = path.join(photosDir, 'all.json');
+  const allXmlPath = path.join(photosDir, 'all.xml');
+  const yearJsonPath = path.join(photosDir, `${year}.json`);
+  const yearXmlPath = path.join(photosDir, `${year}.xml`);
+
+  // Update JSON files
+  await updateJsonAggregateFile(allJsonPath, data);
+  await updateJsonAggregateFile(yearJsonPath, data);
+
+  // Update XML files
+  await updateXmlAggregateFile(allXmlPath, data);
+  await updateXmlAggregateFile(yearXmlPath, data);
+}
+
+async function updateJsonAggregateFile(filePath, newData) {
+  let aggregateData = [];
+
+  if (await fs.pathExists(filePath)) {
+    aggregateData = await fs.readJson(filePath);
+    if (!Array.isArray(aggregateData)) {
+      aggregateData = [];
+    }
+  }
+
+  // Append new data
+  aggregateData.push(newData);
+
+  // Save updated aggregate data
+  await fs.writeJson(filePath, aggregateData, { spaces: 4 });
+}
+
+async function updateXmlAggregateFile(filePath, newData) {
+  let aggregateData = { metadata: [] };
+
+  if (await fs.pathExists(filePath)) {
+    const xmlContent = await fs.readFile(filePath, 'utf8');
+    const parser = new xml2js.Parser();
+    aggregateData = await parser.parseStringPromise(xmlContent);
+    if (!aggregateData || !aggregateData.metadata) {
+      aggregateData = { metadata: [] };
+    } else if (!Array.isArray(aggregateData.metadata)) {
+      aggregateData.metadata = [aggregateData.metadata];
+    }
+  }
+
+  // Append new data
+  aggregateData.metadata.push(newData);
+
+  // Save updated aggregate data
+  const builder = new xml2js.Builder();
+  const xml = builder.buildObject(aggregateData);
+  await fs.writeFile(filePath, xml);
 }
 
 async function main() {
