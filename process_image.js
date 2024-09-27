@@ -107,7 +107,7 @@ async function extractExifData(imagePath) {
       Longitude: tags.GPSLongitude.toString(),
     };
   } else {
-    exifData.GPSLocation = {};
+    exifData.GPSLocation = ''; // Set to empty string instead of empty object
   }
 
   await exiftool.end();
@@ -148,6 +148,31 @@ function getGitCommitInfo(filePath) {
   }
 }
 
+function cleanDataForXml(obj) {
+  if (Array.isArray(obj)) {
+    return obj.map(cleanDataForXml);
+  } else if (obj && typeof obj === 'object') {
+    // If object is empty, return empty string
+    if (Object.keys(obj).length === 0) {
+      return '';
+    }
+    const newObj = {};
+    for (const key in obj) {
+      // Replace invalid characters in keys
+      let cleanKey = key.replace(/[^a-zA-Z0-9_]/g, '_');
+      // Ensure the key does not start with a number
+      if (/^[0-9]/.test(cleanKey)) {
+        cleanKey = '_' + cleanKey;
+      }
+      newObj[cleanKey] = cleanDataForXml(obj[key]);
+    }
+    return newObj;
+  } else {
+    // Convert non-primitive values to strings
+    return obj != null ? obj.toString() : '';
+  }
+}
+
 async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath) {
   const dir = path.dirname(imagePath);
   const ext = path.extname(imagePath);
@@ -159,7 +184,7 @@ async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath) {
 
   const data = {
     ID: id,
-    filenames: imagePaths.map((p) => path.basename(p)),
+    filenames: { filename: imagePaths.map((p) => path.basename(p)) },
     exif: exifData,
     location: commitInfo.commitSummary,
     description: commitInfo.commitDescription,
@@ -171,9 +196,16 @@ async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath) {
   // Save JSON
   await fs.writeJson(jsonPath, data, { spaces: 4 });
 
-  // Save XML
-  const builder = new xml2js.Builder();
-  const xml = builder.buildObject({ metadata: data });
+  // Clean data for XML
+  const dataForXml = cleanDataForXml({ metadata: data });
+
+  console.log('Data for XML:', JSON.stringify(dataForXml, null, 2));
+
+  // Build XML
+  const builder = new xml2js.Builder({
+    cdata: true, // Wrap string values containing special characters in CDATA sections
+  });
+  const xml = builder.buildObject(dataForXml);
   await fs.writeFile(xmlPath, xml);
 
   // Update aggregate files
@@ -219,24 +251,29 @@ async function updateJsonAggregateFile(filePath, newData) {
 }
 
 async function updateXmlAggregateFile(filePath, newData) {
-  let aggregateData = { metadata: [] };
+  let aggregateData = { items: { metadata: [] } };
 
   if (await fs.pathExists(filePath)) {
     const xmlContent = await fs.readFile(filePath, 'utf8');
-    const parser = new xml2js.Parser();
+    const parser = new xml2js.Parser({ explicitArray: false });
     aggregateData = await parser.parseStringPromise(xmlContent);
-    if (!aggregateData || !aggregateData.metadata) {
-      aggregateData = { metadata: [] };
-    } else if (!Array.isArray(aggregateData.metadata)) {
-      aggregateData.metadata = [aggregateData.metadata];
+    if (!aggregateData || !aggregateData.items || !aggregateData.items.metadata) {
+      aggregateData = { items: { metadata: [] } };
+    } else if (!Array.isArray(aggregateData.items.metadata)) {
+      aggregateData.items.metadata = [aggregateData.items.metadata];
     }
   }
 
+  // Clean new data
+  const cleanNewData = cleanDataForXml({ metadata: newData });
+
   // Append new data
-  aggregateData.metadata.push(newData);
+  aggregateData.items.metadata.push(cleanNewData.metadata);
 
   // Save updated aggregate data
-  const builder = new xml2js.Builder();
+  const builder = new xml2js.Builder({
+    cdata: true,
+  });
   const xml = builder.buildObject(aggregateData);
   await fs.writeFile(filePath, xml);
 }
