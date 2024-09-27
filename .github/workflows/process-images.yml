@@ -18,12 +18,12 @@ jobs:
         with:
           ref: ${{ github.ref }}         # Checkout the specific branch or tag that triggered the workflow
           fetch-depth: 0                 # Fetch all history so we can access previous commits
-          persist-credentials: true      # This is the default, but explicitly stating for clarity
+          persist-credentials: true      # Ensure credentials are persisted for pushing changes
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '18'
 
       - name: Install dependencies
         run: |
@@ -31,7 +31,6 @@ jobs:
 
       - name: Process Images
         run: |
-          git fetch --prune --unshallow  # Ensure full Git history is available
           for file in $(git diff --name-only --diff-filter=A HEAD^ HEAD | grep -E '^photos/.*\.(jpg|jpeg|png)$'); do
             node process_image.js "$file"
           done
