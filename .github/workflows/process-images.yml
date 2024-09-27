@@ -13,20 +13,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          python-version: '3.11'
+          node-version: '16'
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install pillow exifread
+          npm install sharp exiftool-vendored fs-extra xml2js
 
       - name: Process Images
         run: |
           for file in $(git diff --name-only --diff-filter=A HEAD^ HEAD | grep -E '^photos/.*\.(jpg|jpeg|png)$'); do
-            python process_image.py "$file"
+            node process_image.js "$file"
           done
 
       - name: List changed files
