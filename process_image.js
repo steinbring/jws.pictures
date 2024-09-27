@@ -98,13 +98,13 @@ async function extractExifData(imagePath) {
   exifData.Camera = `${make} ${model}`.trim();
 
   // Date and Time: DateTimeOriginal
-  exifData.DateTime = tags.DateTimeOriginal || '';
+  exifData.DateTime = tags.DateTimeOriginal ? tags.DateTimeOriginal.toString() : '';
 
   // GPS Location: GPSLatitude and GPSLongitude
   if (tags.GPSLatitude && tags.GPSLongitude) {
     exifData.GPSLocation = {
-      Latitude: tags.GPSLatitude,
-      Longitude: tags.GPSLongitude,
+      Latitude: tags.GPSLatitude.toString(),
+      Longitude: tags.GPSLongitude.toString(),
     };
   } else {
     exifData.GPSLocation = {};
