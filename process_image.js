@@ -100,28 +100,67 @@ async function extractExifData(imagePath) {
   // Date and Time: DateTimeOriginal
   exifData.DateTime = tags.DateTimeOriginal || '';
 
-  // Location: GPSLatitude and GPSLongitude
+  // GPS Location: GPSLatitude and GPSLongitude
   if (tags.GPSLatitude && tags.GPSLongitude) {
-    exifData.Location = {
+    exifData.GPSLocation = {
       Latitude: tags.GPSLatitude,
       Longitude: tags.GPSLongitude,
     };
   } else {
-    exifData.Location = {};
+    exifData.GPSLocation = {};
   }
 
   await exiftool.end();
   return exifData;
 }
 
-async function saveMetadataFiles(exifData, imagePaths, imagePath) {
+function getGitCommitInfo(filePath) {
+  try {
+    // Get the commit hash for the first commit where this file was added
+    const commitHash = execSync(
+      `git log --diff-filter=A --pretty=format:%H -- "${filePath}"`,
+      { encoding: 'utf8' }
+    ).trim();
+
+    // Get the commit summary and description
+    const commitSummary = execSync(
+      `git log -1 --pretty=format:%s ${commitHash}`,
+      { encoding: 'utf8' }
+    ).trim();
+
+    const commitDescription = execSync(
+      `git log -1 --pretty=format:%b ${commitHash}`,
+      { encoding: 'utf8' }
+    ).trim();
+
+    return {
+      commitHash,
+      commitSummary,
+      commitDescription,
+    };
+  } catch (error) {
+    console.error('Error getting git commit info:', error);
+    return {
+      commitHash: '',
+      commitSummary: '',
+      commitDescription: '',
+    };
+  }
+}
+
+async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath) {
   const data = {
     filenames: imagePaths.map((p) => path.basename(p)),
     exif: exifData,
+    location: commitInfo.commitSummary,
+    description: commitInfo.commitDescription,
   };
 
   const dir = path.dirname(imagePath);
-  const base = path.basename(imagePath, path.extname(imagePath));
+  const base = path.basename(imagePath, path.extname(imagePath)).replace(
+    '-original',
+    ''
+  );
   const jsonPath = path.join(dir, `${base}.json`);
   const xmlPath = path.join(dir, `${base}.xml`);
 
@@ -160,9 +199,14 @@ async function main() {
     const exifData = await extractExifData(originalImagePath);
     console.log('Extracted EXIF data:', exifData);
 
+    // Get commit info
+    const commitInfo = getGitCommitInfo(originalImagePath);
+    console.log('Commit info:', commitInfo);
+
     // Generate JSON and XML files
     const [jsonPath, xmlPath] = await saveMetadataFiles(
       exifData,
+      commitInfo,
       imagePaths,
       originalImagePath
     );
