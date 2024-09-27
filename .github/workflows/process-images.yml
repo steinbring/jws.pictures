@@ -37,6 +37,6 @@ jobs:
           shopt -s nullglob  # Enable nullglob to prevent errors when no files match
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add photos/*.json photos/*_thumbnail.*
-          git commit -m "Generated thumbnail and EXIF data" || echo "No changes to commit"
+          git add --all
+          git commit -m "Generated images and metadata files" || echo "No changes to commit"
           git push || echo "Nothing to push"
