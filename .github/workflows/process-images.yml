@@ -34,6 +34,7 @@ jobs:
 
       - name: Commit changes
         run: |
+          shopt -s nullglob  # Enable nullglob to prevent errors when no files match
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add photos/*.json photos/*_thumbnail.*
