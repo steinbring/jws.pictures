@@ -173,7 +173,7 @@ function cleanDataForXml(obj) {
   }
 }
 
-async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath) {
+async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath, projectRoot) {
   const dir = path.dirname(imagePath);
   const ext = path.extname(imagePath);
   const baseNameWithOriginal = path.basename(imagePath, ext); // Includes '-original'
@@ -184,7 +184,12 @@ async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath) {
 
   const data = {
     ID: id,
-    filenames: { filename: imagePaths.map((p) => path.basename(p)) },
+    filenames: {
+      filename: imagePaths.map((p) => {
+        const relativePath = path.relative(projectRoot, p);
+        return '/' + relativePath.replace(/\\/g, '/');
+      }),
+    },
     exif: exifData,
     location: commitInfo.commitSummary,
     description: commitInfo.commitDescription,
@@ -289,6 +294,8 @@ async function main() {
   const imagePath = path.resolve(inputImagePath);
   console.log('Resolved image path:', imagePath);
 
+  const projectRoot = process.cwd(); // Get the current working directory as project root
+
   try {
     // Rename original image
     const originalImagePath = await renameOriginalImage(imagePath);
@@ -311,7 +318,8 @@ async function main() {
       exifData,
       commitInfo,
       imagePaths,
-      originalImagePath
+      originalImagePath,
+      projectRoot
     );
     console.log(`Generated metadata files: ${jsonPath}, ${xmlPath}`);
   } catch (error) {
