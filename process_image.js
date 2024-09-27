@@ -7,17 +7,39 @@ const sharp = require('sharp');
 const { execSync } = require('child_process');
 const xml2js = require('xml2js');
 
+function isFileTracked(filePath) {
+  try {
+    execSync(`git ls-files --error-unmatch "${filePath}"`, { stdio: 'ignore' });
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
 async function renameOriginalImage(imagePath) {
+  console.log('Renaming original image. Image path:', imagePath);
   const dir = path.dirname(imagePath);
   const ext = path.extname(imagePath);
   const base = path.basename(imagePath, ext);
   const newBase = `${base}-original${ext}`;
   const newImagePath = path.join(dir, newBase);
+  console.log('New image path:', newImagePath);
 
-  await fs.move(imagePath, newImagePath);
+  if (!fs.existsSync(imagePath)) {
+    console.error('File does not exist:', imagePath);
+    process.exit(1);
+  }
 
-  // Inform git about the rename
-  execSync(`git mv "${imagePath}" "${newImagePath}"`);
+  const fileTracked = isFileTracked(imagePath);
+
+  if (fileTracked) {
+    // Use git mv to rename the file
+    execSync(`git mv "${imagePath}" "${newImagePath}"`);
+  } else {
+    // File is not tracked, move the file and git add
+    await fs.move(imagePath, newImagePath);
+    execSync(`git add "${newImagePath}"`);
+  }
 
   return newImagePath;
 }
@@ -115,22 +137,28 @@ async function saveMetadataFiles(exifData, imagePaths, imagePath) {
 }
 
 async function main() {
-  const imagePath = process.argv[2];
+  const inputImagePath = process.argv[2];
 
-  if (!imagePath) {
+  if (!inputImagePath) {
     console.error('Please provide an image path.');
     process.exit(1);
   }
 
+  const imagePath = path.resolve(inputImagePath);
+  console.log('Resolved image path:', imagePath);
+
   try {
     // Rename original image
     const originalImagePath = await renameOriginalImage(imagePath);
+    console.log('Renamed original image to:', originalImagePath);
 
     // Generate six versions
     const imagePaths = await generateImages(originalImagePath);
+    console.log('Generated images:', imagePaths);
 
     // Extract EXIF data
     const exifData = await extractExifData(originalImagePath);
+    console.log('Extracted EXIF data:', exifData);
 
     // Generate JSON and XML files
     const [jsonPath, xmlPath] = await saveMetadataFiles(
@@ -138,8 +166,6 @@ async function main() {
       imagePaths,
       originalImagePath
     );
-
-    console.log(`Generated images: ${imagePaths.join(', ')}`);
     console.log(`Generated metadata files: ${jsonPath}, ${xmlPath}`);
   } catch (error) {
     console.error('Error processing image:', error);
