@@ -3,7 +3,10 @@ name: Process Image on Commit
 on:
   push:
     paths:
-      - "photos/**"  # Specify that all changes within the 'photos' folder and its subfolders trigger the action
+      - "photos/**"  # Trigger on changes within the 'photos' directory
+
+permissions:
+  contents: write  # Allow write access to the repository contents
 
 jobs:
   process_image:
@@ -13,12 +16,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2  # Fetch the last two commits to allow git diff to work
+          ref: ${{ github.ref }}         # Checkout the specific branch or tag that triggered the workflow
+          fetch-depth: 0                 # Fetch all history so we can access previous commits
+          persist-credentials: true      # This is the default, but explicitly stating for clarity
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies
         run: |
@@ -26,6 +31,7 @@ jobs:
 
       - name: Process Images
         run: |
+          git fetch --prune --unshallow  # Ensure full Git history is available
           for file in $(git diff --name-only --diff-filter=A HEAD^ HEAD | grep -E '^photos/.*\.(jpg|jpeg|png)$'); do
             node process_image.js "$file"
           done
@@ -35,9 +41,14 @@ jobs:
 
       - name: Commit changes
         run: |
-          shopt -s nullglob  # Enable nullglob to prevent errors when no files match
+          shopt -s nullglob
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add --all
-          git commit -m "Generated images and metadata files" || echo "No changes to commit"
-          git push || echo "Nothing to push"
+          git commit -m "Generated images and metadata files [skip ci]" || echo "No changes to commit"
+
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git push origin HEAD:${{ github.ref_name }} || echo "Nothing to push"
