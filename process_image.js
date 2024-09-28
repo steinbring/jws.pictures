@@ -51,8 +51,8 @@ async function generateImages(imagePath) {
   const formats = ['webp', 'jpeg'];
   const sizes = {
     '-large': 1.0,
-    '-medium': 0.25,
-    '-small': 0.1,
+    '-medium': 0.5,
+    '-small': 0.25,
   };
   const newImagePaths = [];
 
