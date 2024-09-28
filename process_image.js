@@ -50,7 +50,7 @@ async function generateImages(imagePath) {
   const base = path.basename(imagePath, ext).replace('-original', '');
   const formats = ['webp', 'jpeg'];
   const sizes = {
-    '-large': 1.0,
+    '-large': 0.8,
     '-medium': 0.25,
     '-small': 0.1,
   };
