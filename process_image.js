@@ -51,8 +51,8 @@ async function generateImages(imagePath) {
   const formats = ['webp', 'jpeg'];
   const sizes = {
     '-large': 1.0,
-    '-medium': 0.5,
-    '-small': 0.25,
+    '-medium': 0.25,
+    '-small': 0.1,
   };
   const newImagePaths = [];
 
@@ -182,6 +182,10 @@ async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath, pr
   // Extract ID (filename minus extension)
   const id = baseName; // Simplified extraction
 
+  // Remove '[skip ci]' from commit messages
+  const location = commitInfo.commitSummary.replace(/\[skip ci\]/gi, '').trim();
+  const description = commitInfo.commitDescription.replace(/\[skip ci\]/gi, '').trim();
+
   const data = {
     ID: id,
     filenames: {
@@ -191,8 +195,8 @@ async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath, pr
       }),
     },
     exif: exifData,
-    location: commitInfo.commitSummary,
-    description: commitInfo.commitDescription,
+    location: location,
+    description: description,
   };
 
   const jsonPath = path.join(dir, `${baseName}.json`);
@@ -297,6 +301,10 @@ async function main() {
   const projectRoot = process.cwd(); // Get the current working directory as project root
 
   try {
+    // Get commit info before renaming the image
+    const commitInfo = getGitCommitInfo(imagePath);
+    console.log('Commit info:', commitInfo);
+
     // Rename original image
     const originalImagePath = await renameOriginalImage(imagePath);
     console.log('Renamed original image to:', originalImagePath);
@@ -308,10 +316,6 @@ async function main() {
     // Extract EXIF data
     const exifData = await extractExifData(originalImagePath);
     console.log('Extracted EXIF data:', exifData);
-
-    // Get commit info
-    const commitInfo = getGitCommitInfo(originalImagePath);
-    console.log('Commit info:', commitInfo);
 
     // Generate JSON and XML files
     const [jsonPath, xmlPath] = await saveMetadataFiles(

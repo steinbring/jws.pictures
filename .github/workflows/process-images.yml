@@ -43,8 +43,12 @@ jobs:
           shopt -s nullglob
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          # Get the original commit message without '[skip ci]'
+          LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B | sed 's/\[skip ci\]//g' | sed 's/[[:space:]]*$//')
+          # Add '[skip ci]' to prevent retriggering
+          COMMIT_MESSAGE="$LAST_COMMIT_MESSAGE [skip ci]"
           git add --all
-          git commit -m "Generated images and metadata files [skip ci]" || echo "No changes to commit"
+          git commit -m "$COMMIT_MESSAGE" || echo "No changes to commit"
 
       - name: Push changes
         env:
