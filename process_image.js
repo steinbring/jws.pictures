@@ -180,7 +180,7 @@ async function saveMetadataFiles(exifData, commitInfo, imagePaths, imagePath, pr
   const baseName = baseNameWithOriginal.replace('-original', '');
 
   // Extract ID (filename minus extension)
-  const id = baseName.split('.').slice(0, -1).join('.');
+  const id = baseName; // Simplified extraction
 
   const data = {
     ID: id,
