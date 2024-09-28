@@ -118,7 +118,7 @@ function getGitCommitInfo(filePath) {
   try {
     // Get the commit hash for the first commit where this file was added
     const commitHash = execSync(
-      `git log --diff-filter=A --pretty=format:%H -- "${filePath}"`,
+      `git log --follow --diff-filter=A --pretty=format:%H -n 1 -- "${filePath}"`,
       { encoding: 'utf8' }
     ).trim();
 
