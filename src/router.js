@@ -1,5 +1,4 @@
-// src/router.js
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import LandingPage from './components/LandingPage.vue';
 import YearPage from './components/YearPage.vue';
 import PhotoPage from './components/PhotoPage.vue';
@@ -14,18 +13,18 @@ const routes = [
     path: '/:year',
     name: 'YearPage',
     component: YearPage,
-    props: true, // allows passing year as a prop
+    props: true,
   },
   {
     path: '/:year/:id',
     name: 'PhotoPage',
     component: PhotoPage,
-    props: true, // allows passing year and ID as props
+    props: true,
   }
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // Use hash mode for GitHub Pages
   routes,
 });
 
