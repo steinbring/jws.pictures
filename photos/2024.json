@@ -1,0 +1,25 @@
+[
+    {
+        "ID": "PXL_20240922_021050514.LONG_EXPOSURE-01.COVER",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240922_021050514.LONG_EXPOSURE-01.COVER-medium.jpeg",
+                "/photos/2024/PXL_20240922_021050514.LONG_EXPOSURE-01.COVER-small.webp",
+                "/photos/2024/PXL_20240922_021050514.LONG_EXPOSURE-01.COVER-small.jpeg",
+                "/photos/2024/PXL_20240922_021050514.LONG_EXPOSURE-01.COVER-medium.webp",
+                "/photos/2024/PXL_20240922_021050514.LONG_EXPOSURE-01.COVER-large.jpeg",
+                "/photos/2024/PXL_20240922_021050514.LONG_EXPOSURE-01.COVER-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-22T10:10:50+08:00",
+            "GPSLocation": {
+                "Latitude": "25.0345277777778",
+                "Longitude": "121.522041666667"
+            }
+        },
+        "location": "Taipei City, Taiwan",
+        "description": "I took this at Chiang Kai-shek Memorial Hall in September 2024."
+    }
+]
