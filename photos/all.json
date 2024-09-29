@@ -1,0 +1,25 @@
+[
+    {
+        "ID": "PXL_20240908_232346116",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240908_232346116-medium.jpeg",
+                "/photos/2024/PXL_20240908_232346116-small.webp",
+                "/photos/2024/PXL_20240908_232346116-small.jpeg",
+                "/photos/2024/PXL_20240908_232346116-medium.webp",
+                "/photos/2024/PXL_20240908_232346116-large.jpeg",
+                "/photos/2024/PXL_20240908_232346116-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-09T08:23:46+09:00",
+            "GPSLocation": {
+                "Latitude": "35.6590361111111",
+                "Longitude": "139.700702777778"
+            }
+        },
+        "location": "Shibuya City, Tokyo, Japan",
+        "description": "This is the Hachikō Memorial Statue in Tokyo. It is between the subway station and Shibuya Scramble Crossing."
+    }
+]
