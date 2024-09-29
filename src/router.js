@@ -34,7 +34,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(), // Use hash mode for GitHub Pages
+  history: createWebHashHistory(),
   routes,
 });
 

@@ -14,7 +14,6 @@ app.use(PrimeVue, {
     }
 });
 
-// If using Vue Router
 app.use(router);
 
 // Navigation guard to update the page title
