@@ -7,5 +7,12 @@ export default defineConfig({
   build: {
     outDir: '../',  // Output directory at the root
     emptyOutDir: false,  // Prevent Vite from clearing the folder before building
+    rollupOptions: {
+      external: [
+        'primevue/resources/themes/aura/theme.css',
+        'primevue/resources/primevue.min.css',
+        'primeicons/primeicons.css'
+      ]
+    }
   },
 })

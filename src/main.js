@@ -1,8 +1,37 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router'; // Import the router
+import router from './router';
+import PrimeVue from 'primevue/config';
+import Aura from '@primevue/themes/aura';
+import 'leaflet/dist/leaflet.css';
 
 const app = createApp(App);
 
-app.use(router); // Use the router
+// Use PrimeVue globally
+app.use(PrimeVue, {
+    theme: {
+        preset: Aura
+    }
+});
+
+// If using Vue Router
+app.use(router);
+
+// Navigation guard to update the page title
+router.afterEach((to) => {
+  const defaultTitle = 'JWS Pictures';
+  let title = '';
+
+  if (to.meta && to.meta.title) {
+    title = to.meta.title;
+    Object.keys(to.params).forEach((param) => {
+      title = title.replace(`:${param}`, to.params[param]);
+    });
+  } else {
+    title = defaultTitle;
+  }
+
+  document.title = `${title} | ${defaultTitle}`;
+});
+
 app.mount('#app');

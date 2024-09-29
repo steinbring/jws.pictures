@@ -1,21 +1,95 @@
 <template>
   <div id="app">
+    <header>
+      <h1>JWS Pictures</h1>
+      <Menubar :model="items" class="menubar" />
+    </header>
+
     <router-view></router-view>
+
+    <footer>
+      <p>My opinions/shoes are my own. All rights reserved.</p>
+    </footer>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+import Menubar from 'primevue/menubar';
+import { useRouter } from 'vue-router';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Menubar,
+  },
+  setup() {
+    const router = useRouter();
+
+    const items = [
+      {
+        label: 'All Photos',
+        icon: 'pi pi-home',
+        command: () => {
+          router.push('/');
+        },
+      },
+      {
+        label: 'Years',
+        icon: 'pi pi-calendar',
+        items: [
+          { label: '2024', command: () => router.push('/2024') },
+          { label: '2023', command: () => router.push('/2023') },
+          { label: '2022', command: () => router.push('/2022') },
+          // Add more years as needed
+        ],
+      },
+      {
+        label: 'About Joe',
+        icon: 'pi pi-user',
+        url: 'https://jws.dev',
+        target: '_blank',
+      },
+      {
+        label: 'Frequently Asked Questions',
+        icon: 'pi pi-question-circle',
+        command: () => {
+          router.push('/faq');
+        },
+      },
+    ];
+
+    return {
+      items,
+    };
+  },
 };
 </script>
 
 <style>
-/* Optional CSS */
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.menubar {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 20px 0;
 }
 </style>
