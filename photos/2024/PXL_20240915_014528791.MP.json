@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240915_014528791.MP",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240915_014528791.MP-medium.jpeg",
+            "/photos/2024/PXL_20240915_014528791.MP-small.webp",
+            "/photos/2024/PXL_20240915_014528791.MP-medium.webp",
+            "/photos/2024/PXL_20240915_014528791.MP-small.jpeg",
+            "/photos/2024/PXL_20240915_014528791.MP-large.jpeg",
+            "/photos/2024/PXL_20240915_014528791.MP-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-15T10:45:28+09:00",
+        "GPSLocation": {
+            "Latitude": "34.9678805555556",
+            "Longitude": "135.775477777778"
+        }
+    },
+    "location": "Kyoto, Japan",
+    "description": "I took this at the Fushimi Inari Taisha Shinto shrine in Kyoto. It dates from 711 A.D. and features a path with hundreds of traditional gates.  There were a heck of a lot of people here."
+}

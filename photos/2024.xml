@@ -63,4 +63,25 @@
     <location>Nara, Japan</location>
     <description>I took this near the Ryu'o-sha Shrine in Nara.  The deer in Nara are really friendly (for the most part).</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240915_014528791.MP</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240915_014528791.MP-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_014528791.MP-small.webp</filename>
+      <filename>/photos/2024/PXL_20240915_014528791.MP-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240915_014528791.MP-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_014528791.MP-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_014528791.MP-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-15T10:45:28+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>34.9678805555556</Latitude>
+        <Longitude>135.775477777778</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Kyoto, Japan</location>
+    <description>I took this at the Fushimi Inari Taisha Shinto shrine in Kyoto. It dates from 711 A.D. and features a path with hundreds of traditional gates.  There were a heck of a lot of people here.</description>
+  </metadata>
 </items>
