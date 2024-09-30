@@ -44,5 +44,28 @@
         },
         "location": "Shibuya City, Tokyo, Japan",
         "description": "I took this at 8:30 am at the Shibuya Scramble Crossing in Tokyo.  I was a little underwhelmed, but I'm guessing that it would be different at 8:30 pm."
+    },
+    {
+        "ID": "PXL_20240914_051549929",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240914_051549929-medium.jpeg",
+                "/photos/2024/PXL_20240914_051549929-small.webp",
+                "/photos/2024/PXL_20240914_051549929-medium.webp",
+                "/photos/2024/PXL_20240914_051549929-small.jpeg",
+                "/photos/2024/PXL_20240914_051549929-large.jpeg",
+                "/photos/2024/PXL_20240914_051549929-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-14T14:15:49+09:00",
+            "GPSLocation": {
+                "Latitude": "34.6827972222222",
+                "Longitude": "135.847613888889"
+            }
+        },
+        "location": "Nara, Japan",
+        "description": "I took this near the Ryu'o-sha Shrine in Nara.  The deer in Nara are really friendly (for the most part)."
     }
 ]
