@@ -18,7 +18,7 @@ app.use(router);
 
 // Navigation guard to update the page title
 router.afterEach((to) => {
-  const defaultTitle = 'JWS Pictures';
+  const defaultTitle = "JWS Pictures | The Photography of Joe Steinbring";
   let title = '';
 
   if (to.meta && to.meta.title) {
@@ -30,7 +30,7 @@ router.afterEach((to) => {
     title = defaultTitle;
   }
 
-  document.title = `${title} | ${defaultTitle}`;
+  document.title = `${defaultTitle} | ${title}`;
 });
 
 app.mount('#app');

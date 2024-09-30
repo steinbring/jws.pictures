@@ -8,7 +8,7 @@
     <router-view></router-view>
 
     <footer>
-      <p>My opinions/shoes are my own. All rights reserved.</p>
+      <p>My photos and shoes are my own. All rights reserved.</p>
     </footer>
   </div>
 </template>
@@ -67,29 +67,29 @@ export default {
 </script>
 
 <style>
-#app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+  #app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-header {
-  text-align: center;
-}
+  header {
+    text-align: center;
+  }
 
-header h1 {
-  margin: 0;
-  padding: 20px 0;
-}
+  header h1 {
+    margin: 0;
+    padding: 20px 0;
+  }
 
-.menubar {
-  margin: 0 auto;
-  max-width: 800px;
-}
+  .menubar {
+    margin: 0 auto;
+    max-width: 800px;
+  }
 
-footer {
-  text-align: center;
-  margin-top: auto;
-  padding: 20px 0;
-}
+  footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+  }
 </style>
