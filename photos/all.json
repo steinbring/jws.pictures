@@ -159,5 +159,28 @@
         },
         "location": "Shibuya City, Tokyo, Japan",
         "description": "I took this at the Meiji Jingu Shinto shrine in Shibuya.  I saw this type of elevated threshold a lot when I was in China.  Two things that I was told were that it is disrespectful to step on it and that it is there to keep out evil spirits."
+    },
+    {
+        "ID": "PXL_20240909_030148033.MP",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240909_030148033.MP-medium.jpeg",
+                "/photos/2024/PXL_20240909_030148033.MP-small.webp",
+                "/photos/2024/PXL_20240909_030148033.MP-medium.webp",
+                "/photos/2024/PXL_20240909_030148033.MP-small.jpeg",
+                "/photos/2024/PXL_20240909_030148033.MP-large.jpeg",
+                "/photos/2024/PXL_20240909_030148033.MP-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-09T12:01:48+09:00",
+            "GPSLocation": {
+                "Latitude": "35.6959972222222",
+                "Longitude": "139.792722222222"
+            }
+        },
+        "location": "Sumida City, Tokyo, Japan",
+        "description": "I took this at the Ryōgoku Station JR Station in Tokyo. It's next to the Ryogoku Kokugikan National Sumo Arena, and on the way out of the station, there is a lot of sumo-related stuff on the walls."
     }
 ]
