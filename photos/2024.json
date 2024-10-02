@@ -113,5 +113,28 @@
         },
         "location": "Kyoto, Japan",
         "description": "I took this at the Kiyomizu-dera Buddhist temple on Mount Otowa."
+    },
+    {
+        "ID": "PXL_20240909_012307630",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240909_012307630-medium.jpeg",
+                "/photos/2024/PXL_20240909_012307630-small.webp",
+                "/photos/2024/PXL_20240909_012307630-small.jpeg",
+                "/photos/2024/PXL_20240909_012307630-medium.webp",
+                "/photos/2024/PXL_20240909_012307630-large.jpeg",
+                "/photos/2024/PXL_20240909_012307630-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-09T10:23:07+09:00",
+            "GPSLocation": {
+                "Latitude": "35.6737916666667",
+                "Longitude": "139.701633333333"
+            }
+        },
+        "location": "Shibuya City, Tokyo, Japan",
+        "description": "I took this at the Meiji Jingu Shinto shrine in Shibuya. Tokyo was super hot that day, and I was guzzling Pocari Sweat to get through the shrine's grounds."
     }
 ]

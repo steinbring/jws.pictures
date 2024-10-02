@@ -105,4 +105,25 @@
     <location>Kyoto, Japan</location>
     <description>I took this at the Kiyomizu-dera Buddhist temple on Mount Otowa.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240909_012307630</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240909_012307630-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_012307630-small.webp</filename>
+      <filename>/photos/2024/PXL_20240909_012307630-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_012307630-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240909_012307630-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_012307630-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-09T10:23:07+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>35.6737916666667</Latitude>
+        <Longitude>139.701633333333</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Shibuya City, Tokyo, Japan</location>
+    <description>I took this at the Meiji Jingu Shinto shrine in Shibuya. Tokyo was super hot that day, and I was guzzling Pocari Sweat to get through the shrine's grounds.</description>
+  </metadata>
 </items>
