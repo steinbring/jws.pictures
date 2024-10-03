@@ -228,5 +228,28 @@
         },
         "location": "Paju-si, Gyeonggi-do, South Korea",
         "description": "I took this at the Majang Reservoir when I visited the demilitarized zone. There is a suspension bridge over the reservoir and a lovely set of walking trails around it."
+    },
+    {
+        "ID": "PXL_20240922_020851868",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240922_020851868-medium.jpeg",
+                "/photos/2024/PXL_20240922_020851868-small.webp",
+                "/photos/2024/PXL_20240922_020851868-small.jpeg",
+                "/photos/2024/PXL_20240922_020851868-medium.webp",
+                "/photos/2024/PXL_20240922_020851868-large.jpeg",
+                "/photos/2024/PXL_20240922_020851868-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-22T10:08:51+08:00",
+            "GPSLocation": {
+                "Latitude": "25.0348527777778",
+                "Longitude": "121.521544444444"
+            }
+        },
+        "location": "Zhongzheng District, Taipei City, Taiwan",
+        "description": "I took this at the Chiang Kai-shek Memorial Hall, looking down towards the Liberty Square Arch.  There was a storm on it's way in when I took this."
     }
 ]
