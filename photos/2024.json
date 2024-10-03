@@ -205,5 +205,28 @@
         },
         "location": "Nara, Japan",
         "description": "This is the Great Buddha of Nara in Daibutsuden Hall at the Tōdaiji complex. It stands 15 meters high and depicts the Roshana Buddha."
+    },
+    {
+        "ID": "PXL_20240918_000153994",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240918_000153994-medium.jpeg",
+                "/photos/2024/PXL_20240918_000153994-small.webp",
+                "/photos/2024/PXL_20240918_000153994-medium.webp",
+                "/photos/2024/PXL_20240918_000153994-small.jpeg",
+                "/photos/2024/PXL_20240918_000153994-large.jpeg",
+                "/photos/2024/PXL_20240918_000153994-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-18T09:01:53+09:00",
+            "GPSLocation": {
+                "Latitude": "37.7753833333333",
+                "Longitude": "126.927438888889"
+            }
+        },
+        "location": "Paju-si, Gyeonggi-do, South Korea",
+        "description": "I took this at the Majang Reservoir when I visited the demilitarized zone. There is a suspension bridge over the reservoir and a lovely set of walking trails around it."
     }
 ]
