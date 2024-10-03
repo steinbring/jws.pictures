@@ -182,5 +182,28 @@
         },
         "location": "Sumida City, Tokyo, Japan",
         "description": "I took this at the Ryōgoku JR Station in Tokyo. It's next to the Ryogoku Kokugikan National Sumo Arena, and on the way out of the station, there is a lot of sumo-related stuff on the walls."
+    },
+    {
+        "ID": "PXL_20240914_025211611",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240914_025211611-medium.jpeg",
+                "/photos/2024/PXL_20240914_025211611-small.webp",
+                "/photos/2024/PXL_20240914_025211611-small.jpeg",
+                "/photos/2024/PXL_20240914_025211611-medium.webp",
+                "/photos/2024/PXL_20240914_025211611-large.jpeg",
+                "/photos/2024/PXL_20240914_025211611-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-14T11:52:11+09:00",
+            "GPSLocation": {
+                "Latitude": "34.688825",
+                "Longitude": "135.839763888889"
+            }
+        },
+        "location": "Nara, Japan",
+        "description": "This is the Great Buddha of Nara in Daibutsuden Hall at the Tōdaiji complex. It stands 15 meters high and depicts the Roshana Buddha."
     }
 ]
