@@ -15,7 +15,7 @@
     "@primevue/themes": "^4.0.7",
     "@vitejs/plugin-vue": "^5.1.4",
     "animate.css": "^4.1.1",
-    "exiftool-vendored": "^28.3.0",
+    "exiftool-vendored": "^28.3.1",
     "fs-extra": "^11.2.0",
     "leaflet": "^1.9.4",
     "primeicons": "^7.0.0",

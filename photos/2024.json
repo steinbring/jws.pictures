@@ -251,5 +251,28 @@
         },
         "location": "Zhongzheng District, Taipei City, Taiwan",
         "description": "I took this at the Chiang Kai-shek Memorial Hall, looking down towards the Liberty Square Arch.  There was a storm on it's way in when I took this."
+    },
+    {
+        "ID": "PXL_20240909_051936844",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240909_051936844-medium.jpeg",
+                "/photos/2024/PXL_20240909_051936844-small.webp",
+                "/photos/2024/PXL_20240909_051936844-small.jpeg",
+                "/photos/2024/PXL_20240909_051936844-medium.webp",
+                "/photos/2024/PXL_20240909_051936844-large.jpeg",
+                "/photos/2024/PXL_20240909_051936844-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-09T14:19:36+09:00",
+            "GPSLocation": {
+                "Latitude": "35.6970361111111",
+                "Longitude": "139.793494444444"
+            }
+        },
+        "location": "Sumida City, Tokyo, Japan",
+        "description": "I took this at the Ryogoku Kokugikan National Sumo Arena in Tokyo. I was in town for the Tokyo Grand Sumo Tournament and managed to get a ticket."
     }
 ]
