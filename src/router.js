@@ -3,6 +3,7 @@ import LandingPage from './components/LandingPage.vue';
 import YearPage from './components/YearPage.vue';
 import PhotoPage from './components/PhotoPage.vue';
 import FAQ from './components/FAQ.vue';
+import YearsPage from './components/YearsPage.vue';
 
 const routes = [
   {
@@ -17,6 +18,12 @@ const routes = [
     component: YearPage,
     props: true,
     meta: { title: 'Photos from :year' },
+  },
+  {
+    path: '/years',
+    name: 'Year',
+    component: YearsPage,
+    meta: { title: 'Years' },
   },
   {
     path: '/:year/:id',

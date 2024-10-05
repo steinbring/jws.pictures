@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <header>
-      <h1>JWS Pictures</h1>
+      <div class="logo-container">
+        <img src="https://jws.social/fileserver/01E5SQ87G8HX9T4NYTPR147MJF/attachment/original/01HYRS8T6WMW6VMSHW8MKT2HC0.png" alt="JWS Pictures" />
+        <h1>JWS Pictures</h1>
+      </div>
       <Menubar :model="items" class="menubar" />
     </header>
 
@@ -67,29 +70,40 @@ export default {
 </script>
 
 <style>
-  #app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  header {
-    text-align: center;
-  }
+header {
+  text-align: center;
+}
 
-  header h1 {
-    margin: 0;
-    padding: 20px 0;
-  }
+header .logo-container {
+  display: flex;
+  align-items: center;       /* Vertically center the items */
+  justify-content: center;   /* Horizontally center the container */
+}
 
-  .menubar {
-    margin: 0 auto;
-    max-width: 800px;
-  }
+header .logo-container img {
+  height: 60px;              /* Adjust the height as needed */
+  margin-right: 15px;        /* Space between image and text */
+}
 
-  footer {
-    text-align: center;
-    margin-top: auto;
-    padding: 20px 0;
-  }
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.menubar {
+  margin: 0;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 20px 0;
+}
 </style>

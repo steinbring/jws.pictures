@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>All Photos</h1>
+    <!-- Breadcrumb Component -->
+    <Breadcrumb :home="home" :model="items" class="breadcrumb" />
 
     <div v-if="photos.length > 0" class="card-container">
       <div
@@ -41,15 +42,19 @@
 <script>
 import Image from 'primevue/image';
 import Card from 'primevue/card';
+import Breadcrumb from 'primevue/breadcrumb';
 
 export default {
   components: {
     Image,
     Card,
+    Breadcrumb,
   },
   data() {
     return {
       photos: [],
+      home: { icon: 'pi pi-home', to: '/' },
+      items: [{ label: 'All Photos' }],
     };
   },
   mounted() {
@@ -117,54 +122,51 @@ export default {
 </script>
 
 <style scoped>
-@import 'animate.css/animate.min.css';
+  @import 'animate.css/animate.min.css';
 
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
+  .breadcrumb {
+    margin-bottom: 2rem;
+  }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the cards horizontally */
-  align-items: flex-start; /* Align cards to the top */
-  gap: 1rem; /* Space between cards */
-}
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-.card-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .card-wrapper {
+    width: 400px; /* Set a fixed width for all cards */
+    overflow: hidden; /* Prevent content overflow */
+    box-sizing: border-box; /* Include padding and border in width */
+  }
 
-.p-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content inside the card */
-}
+  .p-card {
+    width: 100%;
+  }
 
-.p-card img {
-  max-width: 100%;
-  height: auto;
-}
+  .p-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-.card-title {
-  text-decoration: none;
-  color: inherit;
-}
+  .card-title {
+    text-decoration: none;
+    color: inherit;
+  }
 
-.card-title:hover {
-  text-decoration: underline;
-}
+  .card-title:hover {
+    text-decoration: underline;
+  }
 
-.p-card .p-card-title,
-.p-card .p-card-subtitle {
-  text-align: center;
-  margin: 0.5rem 0;
-}
+  .p-card .p-card-title,
+  .p-card .p-card-subtitle {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
 
-.router-link {
-  display: block;
-}
+  .router-link {
+    display: block;
+  }
 </style>

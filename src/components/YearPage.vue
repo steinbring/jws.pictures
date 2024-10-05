@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Photos from {{ year }}</h1>
+    <!-- Breadcrumb Component -->
+    <Breadcrumb :home="home" :model="items" class="breadcrumb" />
 
     <div v-if="photos.length > 0" class="card-container">
       <div
@@ -42,11 +43,13 @@
 <script>
 import Image from 'primevue/image';
 import Card from 'primevue/card';
+import Breadcrumb from 'primevue/breadcrumb';
 
 export default {
   components: {
     Image,
     Card,
+    Breadcrumb,
   },
   props: ['year'],
   data() {
@@ -54,9 +57,28 @@ export default {
       photos: [],
       loading: true,
       errorMessage: null,
+      home: { icon: 'pi pi-home', to: '/' },
+      items: [],
     };
   },
   mounted() {
+    // Set up breadcrumb items using the command property
+    this.items = [
+      {
+        label: 'Years',
+        command: () => {
+          this.$router.push('/years');
+        },
+      },
+      {
+        label: `Photos from ${this.year}`,
+        command: () => {
+          this.$router.push(`/${this.year}`);
+        },
+      },
+    ];
+
+    // Fetch photos for the specified year
     fetch(`/photos/${this.year}.json`)
       .then((response) => {
         if (!response.ok) {
@@ -130,33 +152,30 @@ export default {
 <style scoped>
 @import 'animate.css/animate.min.css';
 
-h1 {
-  text-align: center;
+.breadcrumb {
   margin-bottom: 2rem;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the cards horizontally */
-  align-items: flex-start; /* Align cards to the top */
-  gap: 1rem; /* Space between cards */
+  justify-content: center;
+  gap: 1rem;
 }
 
 .card-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 400px; /* Set a fixed width for all cards */
+  overflow: hidden; /* Prevent content overflow */
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 .p-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content inside the card */
+  width: 100%;
 }
 
 .p-card img {
-  max-width: 100%;
+  display: block;
+  width: 100%;
   height: auto;
 }
 
