@@ -252,4 +252,25 @@
     <location>Sumida City, Tokyo, Japan</location>
     <description>I took this at the Ryogoku Kokugikan National Sumo Arena in Tokyo. I was in town for the Tokyo Grand Sumo Tournament and managed to get a ticket.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240918_040335604</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240918_040335604-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240918_040335604-small.webp</filename>
+      <filename>/photos/2024/PXL_20240918_040335604-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240918_040335604-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240918_040335604-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240918_040335604-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-18T13:03:35+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>37.8901611111111</Latitude>
+        <Longitude>126.739013888889</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Paju-si, Gyeonggi-do, South Korea</location>
+    <description>This is the "Bridge of Freedom." It crosses a lake at Imjingak Pyeonghwa Nuri Park. Initially, the Bridge had two spans that headed up and down, but they were destroyed by bombing, and only the pier remained. Later, the west Bridge was restored to exchange prisoners of war, and a temporary bridge was installed at the south end. 13,000 POWs were exchanged on it.</description>
+  </metadata>
 </items>

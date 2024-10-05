@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240918_040335604",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240918_040335604-medium.jpeg",
+            "/photos/2024/PXL_20240918_040335604-small.webp",
+            "/photos/2024/PXL_20240918_040335604-medium.webp",
+            "/photos/2024/PXL_20240918_040335604-small.jpeg",
+            "/photos/2024/PXL_20240918_040335604-large.jpeg",
+            "/photos/2024/PXL_20240918_040335604-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-18T13:03:35+09:00",
+        "GPSLocation": {
+            "Latitude": "37.8901611111111",
+            "Longitude": "126.739013888889"
+        }
+    },
+    "location": "Paju-si, Gyeonggi-do, South Korea",
+    "description": "This is the \"Bridge of Freedom.\" It crosses a lake at Imjingak Pyeonghwa Nuri Park. Initially, the Bridge had two spans that headed up and down, but they were destroyed by bombing, and only the pier remained. Later, the west Bridge was restored to exchange prisoners of war, and a temporary bridge was installed at the south end. 13,000 POWs were exchanged on it."
+}
