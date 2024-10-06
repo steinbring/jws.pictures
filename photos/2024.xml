@@ -315,4 +315,25 @@
     <location>Hiroshima, Japan</location>
     <description>I took this at the Atomic Bomb Dome in Hiroshima.  It was originally the Hiroshima Prefectural Industrial Promotion Hall.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240913_031655370</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240913_031655370-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240913_031655370-small.webp</filename>
+      <filename>/photos/2024/PXL_20240913_031655370-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240913_031655370-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240913_031655370-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240913_031655370-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-13T12:16:55+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>34.3956888888889</Latitude>
+        <Longitude>132.454161111111</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Hiroshima, Japan</location>
+    <description>I took this at the Atomic Bomb Dome in Hiroshima. It was originally the Hiroshima Prefectural Industrial Promotion Hall.</description>
+  </metadata>
 </items>
