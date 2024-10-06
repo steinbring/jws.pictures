@@ -62,7 +62,7 @@ export default {
     };
   },
   mounted() {
-    // Set up breadcrumb items using the command property
+    // Set up breadcrumbs
     this.items = [
       {
         label: 'Years',

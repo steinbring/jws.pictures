@@ -70,7 +70,6 @@ export default {
       cardStyle: {
         width: 'calc(100vw - 2rem)',
         margin: '1rem',
-        // Removed fixed height and overflow to allow scrolling
       },
       tileLayerUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       tileLayerAttribution:
