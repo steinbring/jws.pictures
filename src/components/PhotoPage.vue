@@ -8,8 +8,8 @@
       <template #subtitle>{{ photo.location }}</template>
       <template #content>
         <div class="sidebar-content">
-          <p><strong>Date:</strong> {{ formattedDate }}</p>
-          <p><strong>Camera:</strong> {{ photo.exif.Camera }}</p>
+          <p><strong>📅</strong> {{ formattedDate }}</p>
+          <p><strong>📷</strong> {{ photo.exif.Camera }}</p>
           <!-- Map Container -->
           <div class="map-container">
             <l-map
