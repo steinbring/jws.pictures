@@ -294,4 +294,25 @@
     <location>Paju-si, Gyeonggi-do, South Korea</location>
     <description>This is the Comfort Woman Memorial at Imjingak Pyeonghwa Nuri Park. The empty chair represents the women who have since died. There are two memorials because one is intended to be in the north in the future.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240913_031731111</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240913_031731111-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240913_031731111-small.webp</filename>
+      <filename>/photos/2024/PXL_20240913_031731111-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240913_031731111-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240913_031731111-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240913_031731111-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-13T12:17:31+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>34.3956888888889</Latitude>
+        <Longitude>132.454161111111</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Hiroshima, Japan</location>
+    <description>I took this at the Atomic Bomb Dome in Hiroshima.  It was originally the Hiroshima Prefectural Industrial Promotion Hall.</description>
+  </metadata>
 </items>

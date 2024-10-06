@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240913_031731111",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240913_031731111-medium.jpeg",
+            "/photos/2024/PXL_20240913_031731111-small.webp",
+            "/photos/2024/PXL_20240913_031731111-small.jpeg",
+            "/photos/2024/PXL_20240913_031731111-medium.webp",
+            "/photos/2024/PXL_20240913_031731111-large.jpeg",
+            "/photos/2024/PXL_20240913_031731111-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-13T12:17:31+09:00",
+        "GPSLocation": {
+            "Latitude": "34.3956888888889",
+            "Longitude": "132.454161111111"
+        }
+    },
+    "location": "Hiroshima, Japan",
+    "description": "I took this at the Atomic Bomb Dome in Hiroshima.  It was originally the Hiroshima Prefectural Industrial Promotion Hall."
+}
