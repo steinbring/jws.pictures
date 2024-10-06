@@ -26,7 +26,36 @@
             </l-map>
             <p v-else>No GPS data available for this photo.</p>
           </div>
-          <p><link rel="webmention" href="https://webmention.io/jws.pictures/webmention" /></p>
+
+          <!-- Web Mentions Section -->
+          <div class="webmentions">
+            <h3>Web Mentions</h3>
+            <div v-if="webMentions.length">
+              <ul>
+                <li v-for="mention in webMentions" :key="mention.url">
+                  <div class="mention">
+                    <img
+                      v-if="mention.author.photo"
+                      :src="mention.author.photo"
+                      alt=""
+                      class="mention-author-photo"
+                    />
+                    <div>
+                      <a :href="mention.author.url" target="_blank">{{ mention.author.name }}</a>
+                      <p v-if="mention.content && mention.content.text">
+                        {{ mention.content.text }}
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div v-else>
+              <p>No web mentions yet.</p>
+            </div>
+          </div>
+
+          <!-- Rest of your content -->
         </div>
       </template>
       <template #footer>
@@ -76,6 +105,7 @@ export default {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       latitude: null,
       longitude: null,
+      webMentions: [],
     };
   },
   computed: {
@@ -89,25 +119,29 @@ export default {
     },
   },
   mounted() {
-    fetch(`/photos/${this.year}/${this.id}.json`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(
-            `Network response was not ok: ${response.status} ${response.statusText}`
-          );
-        }
-        return response.json();
-      })
-      .then((data) => {
-        this.photo = data;
-        this.prepareImageSources();
-        this.extractGPSData();
-      })
-      .catch((error) => {
-        console.error('Error fetching photo data:', error);
-      });
+    this.fetchPhotoData();
+    this.fetchWebMentions();
   },
   methods: {
+    fetchPhotoData() {
+      fetch(`/photos/${this.year}/${this.id}.json`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              `Network response was not ok: ${response.status} ${response.statusText}`
+            );
+          }
+          return response.json();
+        })
+        .then((data) => {
+          this.photo = data;
+          this.prepareImageSources();
+          this.extractGPSData();
+        })
+        .catch((error) => {
+          console.error('Error fetching photo data:', error);
+        });
+    },
     prepareImageSources() {
       if (!this.photo || !this.photo.filenames) {
         console.log('No photo or filenames data available:', this.photo);
@@ -117,14 +151,14 @@ export default {
       const filenames = this.photo.filenames.filename;
 
       // Get image URLs based on size
-      const smallImage = filenames.find((filename) =>
-        filename.includes('-small') && filename.endsWith('.jpeg')
+      const smallImage = filenames.find(
+        (filename) => filename.includes('-small') && filename.endsWith('.jpeg')
       );
-      const mediumImage = filenames.find((filename) =>
-        filename.includes('-medium') && filename.endsWith('.jpeg')
+      const mediumImage = filenames.find(
+        (filename) => filename.includes('-medium') && filename.endsWith('.jpeg')
       );
-      const largeImage = filenames.find((filename) =>
-        filename.includes('-large') && filename.endsWith('.jpeg')
+      const largeImage = filenames.find(
+        (filename) => filename.includes('-large') && filename.endsWith('.jpeg')
       );
 
       // Use responsive image selection
@@ -159,6 +193,22 @@ export default {
         this.latitude = null;
         this.longitude = null;
       }
+    },
+    fetchWebMentions() {
+      const baseUrl = 'https://jws.pictures';
+      const pageUrl = `${baseUrl}/${this.year}/${this.id}`;
+      const apiUrl = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(
+        pageUrl
+      )}`;
+
+      fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          this.webMentions = data.children || [];
+        })
+        .catch((error) => {
+          console.error('Error fetching web mentions:', error);
+        });
     },
     goBackToYear() {
       this.$router.push(`/${this.year}`);
@@ -224,5 +274,41 @@ export default {
   .card-header-image {
     height: 50vh;
   }
+}
+
+/* Styles for the web mentions */
+.webmentions {
+  margin-top: 1rem;
+}
+
+.webmentions h3 {
+  margin-bottom: 0.5rem;
+}
+
+.webmentions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.webmentions .mention {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.mention-author-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.mention a {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.mention p {
+  margin: 0;
 }
 </style>

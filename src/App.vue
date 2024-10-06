@@ -16,57 +16,60 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue';
-import Menubar from 'primevue/menubar';
 import { useRouter } from 'vue-router';
+import Menubar from 'primevue/menubar';
+import { useHead } from '@vueuse/head'; // Import useHead from @vueuse/head
 
-export default {
-  name: 'App',
-  components: {
-    Menubar,
+const router = useRouter();
+
+const items = [
+  {
+    label: 'All Photos',
+    icon: 'pi pi-home',
+    command: () => {
+      router.push('/');
+    },
   },
-  setup() {
-    const router = useRouter();
-
-    const items = [
-      {
-        label: 'All Photos',
-        icon: 'pi pi-home',
-        command: () => {
-          router.push('/');
-        },
-      },
-      {
-        label: 'Years',
-        icon: 'pi pi-calendar',
-        items: [
-          { label: '2024', command: () => router.push('/2024') },
-          { label: '2023', command: () => router.push('/2023') },
-          { label: '2022', command: () => router.push('/2022') },
-          // Add more years as needed
-        ],
-      },
-      {
-        label: 'About Joe',
-        icon: 'pi pi-user',
-        url: 'https://jws.dev',
-        target: '_blank',
-      },
-      {
-        label: 'Frequently Asked Questions',
-        icon: 'pi pi-question-circle',
-        command: () => {
-          router.push('/faq');
-        },
-      },
-    ];
-
-    return {
-      items,
-    };
+  {
+    label: 'Years',
+    icon: 'pi pi-calendar',
+    items: [
+      { label: '2024', command: () => router.push('/2024') },
+      { label: '2023', command: () => router.push('/2023') },
+      { label: '2022', command: () => router.push('/2022') },
+      // Add more years as needed
+    ],
   },
-};
+  {
+    label: 'About Joe',
+    icon: 'pi pi-user',
+    url: 'https://jws.dev',
+    target: '_blank',
+  },
+  {
+    label: 'Frequently Asked Questions',
+    icon: 'pi pi-question-circle',
+    command: () => {
+      router.push('/faq');
+    },
+  },
+];
+
+// Use useHead to add webmention links to the document head
+useHead({
+  link: [
+    {
+      rel: 'webmention',
+      href: 'https://webmention.io/jws.pictures/webmention',
+    },
+    {
+      rel: 'pingback',
+      href: 'https://webmention.io/jws.pictures/xmlrpc',
+    },
+  ],
+});
 </script>
 
 <style>
@@ -82,14 +85,14 @@ header {
 
 header .logo-container {
   display: flex;
-  align-items: center;       /* Vertically center the items */
-  justify-content: center;   /* Horizontally center the container */
+  align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
 }
 
 header .logo-container img {
-  height: 60px;              /* Adjust the height as needed */
-  margin-right: 15px;        /* Space between image and text */
+  height: 60px;
+  margin-right: 15px;
 }
 
 header h1 {
