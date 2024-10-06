@@ -101,7 +101,8 @@ export default {
                 date,
               };
             })
-            .sort((a, b) => new Date(a.date) - new Date(b.date));
+            // Sort from newest to oldest
+            .sort((a, b) => new Date(b.date) - new Date(a.date));
         } catch (error) {
           throw new Error('Invalid JSON format');
         }
@@ -150,51 +151,51 @@ export default {
 </script>
 
 <style scoped>
-@import 'animate.css/animate.min.css';
+  @import 'animate.css/animate.min.css';
 
-.breadcrumb {
-  margin-bottom: 2rem;
-}
+  .breadcrumb {
+    margin-bottom: 2rem;
+  }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-.card-wrapper {
-  width: 400px; /* Set a fixed width for all cards */
-  overflow: hidden; /* Prevent content overflow */
-  box-sizing: border-box; /* Include padding and border in width */
-}
+  .card-wrapper {
+    width: 400px; /* Set a fixed width for all cards */
+    overflow: hidden; /* Prevent content overflow */
+    box-sizing: border-box; /* Include padding and border in width */
+  }
 
-.p-card {
-  width: 100%;
-}
+  .p-card {
+    width: 100%;
+  }
 
-.p-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+  .p-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-.card-title {
-  text-decoration: none;
-  color: inherit;
-}
+  .card-title {
+    text-decoration: none;
+    color: inherit;
+  }
 
-.card-title:hover {
-  text-decoration: underline;
-}
+  .card-title:hover {
+    text-decoration: underline;
+  }
 
-.p-card .p-card-title,
-.p-card .p-card-subtitle {
-  text-align: center;
-  margin: 0.5rem 0;
-}
+  .p-card .p-card-title,
+  .p-card .p-card-subtitle {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
 
-.router-link {
-  display: block;
-}
+  .router-link {
+    display: block;
+  }
 </style>

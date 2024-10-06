@@ -82,7 +82,8 @@ export default {
                 year,
               };
             })
-            .sort((a, b) => new Date(a.date) - new Date(b.date));
+            // Sort from newest to oldest
+            .sort((a, b) => new Date(b.date) - new Date(a.date));
         } catch (error) {
           throw new Error('Invalid JSON format');
         }

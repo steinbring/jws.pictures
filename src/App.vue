@@ -84,6 +84,7 @@ header .logo-container {
   display: flex;
   align-items: center;       /* Vertically center the items */
   justify-content: center;   /* Horizontally center the container */
+  margin-bottom: 10px;
 }
 
 header .logo-container img {
