@@ -26,6 +26,7 @@
             </l-map>
             <p v-else>No GPS data available for this photo.</p>
           </div>
+          <p><link rel="webmention" href="https://webmention.io/jws.pictures/webmention" /></p>
         </div>
       </template>
       <template #footer>
