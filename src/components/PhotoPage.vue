@@ -195,11 +195,8 @@ export default {
       }
     },
     fetchWebMentions() {
-      const baseUrl = 'https://jws.pictures';
-      const pageUrl = `${baseUrl}/${this.year}/${this.id}`;
-      const apiUrl = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(
-        pageUrl
-      )}`;
+      const pageUrl = window.location.href;
+      const apiUrl = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(pageUrl)}`;
 
       fetch(apiUrl)
         .then((response) => response.json())
