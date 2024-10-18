@@ -2,10 +2,11 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
+  base: 'https://jws.pictures/',
   plugins: [vue()],
   root: './src',  // Set the root folder for source files
   build: {
-    outDir: '../',  // Output directory at the root
+    outDir: '../',  // Output directory for build files
     emptyOutDir: false,  // Prevent Vite from clearing the folder before building
     rollupOptions: {
       external: [
