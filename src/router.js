@@ -41,7 +41,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('https://jws.pictures/'),
+  history: createWebHistory(),
   routes,
 });
 
