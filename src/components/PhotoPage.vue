@@ -13,13 +13,6 @@
 
           <!-- Links Table -->
           <table class="image-links-table">
-            <thead>
-              <tr>
-                <th>Size</th>
-                <th>JPEG</th>
-                <th>WebP</th>
-              </tr>
-            </thead>
             <tbody>
               <tr v-for="size in sizes" :key="size">
                 <td>{{ capitalize(size) }}</td>
