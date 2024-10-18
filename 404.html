@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-      // Preserve the path and query parameters
-      var target = window.location.pathname + window.location.search + window.location.hash;
-      // Redirect to index.html with the preserved path
-      window.location.replace('https://jws.pictures/index.html' + target);
-    </script>
+    <title>Page Not Found</title>
+    <meta http-equiv="refresh" content="0;url=/" />
   </head>
-  <body></body>
+  <body>
+    <p>Page not found. Redirecting to <a href="/">home page</a>.</p>
+    <script>
+      // Redirect to index.html while preserving the path
+      window.location.replace("/" + window.location.pathname + window.location.search + window.location.hash);
+    </script>
+  </body>
 </html>

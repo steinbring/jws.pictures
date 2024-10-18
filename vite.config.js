@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: 'https://jws.pictures/',
+  base: '/',
   plugins: [vue()],
   root: './src',  // Set the root folder for source files
   build: {
