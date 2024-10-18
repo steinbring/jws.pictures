@@ -10,6 +10,41 @@
         <div class="sidebar-content">
           <p><strong>📅</strong> {{ formattedDate }}</p>
           <p><strong>📷</strong> {{ photo.exif.Camera }}</p>
+
+          <!-- Links Table -->
+          <table class="image-links-table">
+            <thead>
+              <tr>
+                <th>Size</th>
+                <th>JPEG</th>
+                <th>WebP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="size in sizes" :key="size">
+                <td>{{ capitalize(size) }}</td>
+                <td>
+                  <a
+                    v-if="imageLinks[size].jpeg"
+                    :href="imageLinks[size].jpeg"
+                    target="_blank"
+                    >JPEG</a
+                  >
+                  <span v-else>--</span>
+                </td>
+                <td>
+                  <a
+                    v-if="imageLinks[size].webp"
+                    :href="imageLinks[size].webp"
+                    target="_blank"
+                    >WebP</a
+                  >
+                  <span v-else>--</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
           <!-- Map Container -->
           <div class="map-container">
             <l-map
@@ -27,7 +62,6 @@
             <p v-else>No GPS data available for this photo.</p>
           </div>
 
-          <!-- Rest of your content -->
         </div>
       </template>
       <template #footer>
@@ -77,6 +111,11 @@ export default {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       latitude: null,
       longitude: null,
+      imageLinks: {
+        small: { jpeg: '', webp: '' },
+        medium: { jpeg: '', webp: '' },
+        large: { jpeg: '', webp: '' },
+      },
     };
   },
   computed: {
@@ -87,6 +126,9 @@ export default {
     },
     hasGPSData() {
       return this.latitude !== null && this.longitude !== null;
+    },
+    sizes() {
+      return ['small', 'medium', 'large'];
     },
   },
   mounted() {
@@ -120,16 +162,40 @@ export default {
 
       const filenames = this.photo.filenames.filename;
 
-      // Get image URLs based on size
-      const smallImage = filenames.find(
-        (filename) => filename.includes('-small') && filename.endsWith('.jpeg')
-      );
-      const mediumImage = filenames.find(
-        (filename) => filename.includes('-medium') && filename.endsWith('.jpeg')
-      );
-      const largeImage = filenames.find(
-        (filename) => filename.includes('-large') && filename.endsWith('.jpeg')
-      );
+      // Initialize imageLinks
+      this.imageLinks = {
+        small: { jpeg: '', webp: '' },
+        medium: { jpeg: '', webp: '' },
+        large: { jpeg: '', webp: '' },
+      };
+
+      // Loop through filenames to populate imageLinks
+      filenames.forEach((filename) => {
+        if (filename.includes('-small')) {
+          if (filename.endsWith('.jpeg')) {
+            this.imageLinks.small.jpeg = filename;
+          } else if (filename.endsWith('.webp')) {
+            this.imageLinks.small.webp = filename;
+          }
+        } else if (filename.includes('-medium')) {
+          if (filename.endsWith('.jpeg')) {
+            this.imageLinks.medium.jpeg = filename;
+          } else if (filename.endsWith('.webp')) {
+            this.imageLinks.medium.webp = filename;
+          }
+        } else if (filename.includes('-large')) {
+          if (filename.endsWith('.jpeg')) {
+            this.imageLinks.large.jpeg = filename;
+          } else if (filename.endsWith('.webp')) {
+            this.imageLinks.large.webp = filename;
+          }
+        }
+      });
+
+      // Get image URLs based on size for responsive image selection
+      const smallImage = this.imageLinks.small.jpeg;
+      const mediumImage = this.imageLinks.medium.jpeg;
+      const largeImage = this.imageLinks.large.jpeg;
 
       // Use responsive image selection
       this.selectedImage = this.getResponsiveImage({
@@ -170,6 +236,9 @@ export default {
     goBackToAll() {
       this.$router.push(`/`);
     },
+    capitalize(word) {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    },
   },
 };
 </script>
@@ -200,7 +269,7 @@ export default {
   margin-top: 1rem;
 }
 
-/* Adjust map container to be 50% of its original size */
+/* Adjust map container */
 .map-container {
   margin-top: 1rem;
   width: 100%;
@@ -216,7 +285,7 @@ export default {
 .leaflet-map > .leaflet-container {
   width: 100%;
   height: auto;
-  min-height: 150px; /* Ensure a minimum height */
+  min-height: 450px; /* Increased height from 150px to 450px */
 }
 
 /* Allow the card to expand based on its content */
@@ -228,5 +297,23 @@ export default {
   .card-header-image {
     height: 50vh;
   }
+}
+
+/* Styles for the image links table */
+.image-links-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.image-links-table th,
+.image-links-table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.image-links-table th {
+  background-color: #f5f5f5;
 }
 </style>
