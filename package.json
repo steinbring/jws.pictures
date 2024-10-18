@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "cp index.html 404.html",
     "serve": "vite preview"
   },
   "keywords": [],
