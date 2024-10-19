@@ -77,236 +77,295 @@
   </div>
 </template>
 
-<script>
-import Card from 'primevue/card';
-import Button from 'primevue/button';
-import { LMap, LTileLayer, LMarker } from 'vue3-leaflet';
+<script setup>
+  import { ref, computed, onMounted } from 'vue';
+  import { useHead } from '@vueuse/head';
+  import { useRoute, useRouter } from 'vue-router';
+  import Card from 'primevue/card';
+  import Button from 'primevue/button';
+  import { LMap, LTileLayer, LMarker } from 'vue3-leaflet';
 
-export default {
-  components: {
-    Card,
-    Button,
-    LMap,
-    LTileLayer,
-    LMarker,
-  },
-  props: ['year', 'id'],
-  data() {
-    return {
-      photo: null,
-      selectedImage: '',
-      cardStyle: {
-        width: 'calc(100vw - 2rem)',
-        margin: '1rem',
-      },
-      tileLayerUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      tileLayerAttribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      latitude: null,
-      longitude: null,
-      imageLinks: {
-        small: { jpeg: '', webp: '' },
-        medium: { jpeg: '', webp: '' },
-        large: { jpeg: '', webp: '' },
-      },
-    };
-  },
-  computed: {
-    formattedDate() {
-      return this.photo && this.photo.exif && this.photo.exif.DateTime
-        ? new Date(this.photo.exif.DateTime).toLocaleDateString()
-        : '';
-    },
-    hasGPSData() {
-      return this.latitude !== null && this.longitude !== null;
-    },
-    sizes() {
-      return ['small', 'medium', 'large'];
-    },
-  },
-  mounted() {
-    this.fetchPhotoData();
-  },
-  methods: {
-    fetchPhotoData() {
-      fetch(`/photos/${this.year}/${this.id}.json`)
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error(
-              `Network response was not ok: ${response.status} ${response.statusText}`
-            );
-          }
-          return response.json();
-        })
-        .then((data) => {
-          this.photo = data;
-          this.prepareImageSources();
-          this.extractGPSData();
-        })
-        .catch((error) => {
-          console.error('Error fetching photo data:', error);
-        });
-    },
-    prepareImageSources() {
-      if (!this.photo || !this.photo.filenames) {
-        console.log('No photo or filenames data available:', this.photo);
-        return;
-      }
+  const route = useRoute();
+  const router = useRouter();
 
-      const filenames = this.photo.filenames.filename;
+  const year = route.params.year;
+  const id = route.params.id;
 
-      // Initialize imageLinks
-      this.imageLinks = {
-        small: { jpeg: '', webp: '' },
-        medium: { jpeg: '', webp: '' },
-        large: { jpeg: '', webp: '' },
-      };
+  const baseUrl = 'https://jws.pictures'; // Your site's base URL
 
-      // Loop through filenames to populate imageLinks
-      filenames.forEach((filename) => {
-        if (filename.includes('-small')) {
-          if (filename.endsWith('.jpeg')) {
-            this.imageLinks.small.jpeg = filename;
-          } else if (filename.endsWith('.webp')) {
-            this.imageLinks.small.webp = filename;
-          }
-        } else if (filename.includes('-medium')) {
-          if (filename.endsWith('.jpeg')) {
-            this.imageLinks.medium.jpeg = filename;
-          } else if (filename.endsWith('.webp')) {
-            this.imageLinks.medium.webp = filename;
-          }
-        } else if (filename.includes('-large')) {
-          if (filename.endsWith('.jpeg')) {
-            this.imageLinks.large.jpeg = filename;
-          } else if (filename.endsWith('.webp')) {
-            this.imageLinks.large.webp = filename;
-          }
+  const photo = ref(null);
+  const selectedImage = ref('');
+  const cardStyle = {
+    width: 'calc(100vw - 2rem)',
+    margin: '1rem',
+  };
+
+  const tileLayerUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+  const tileLayerAttribution =
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+  const latitude = ref(null);
+  const longitude = ref(null);
+  const imageLinks = ref({
+    small: { jpeg: '', webp: '' },
+    medium: { jpeg: '', webp: '' },
+    large: { jpeg: '', webp: '' },
+  });
+
+  const formattedDate = computed(() => {
+    return photo.value && photo.value.exif && photo.value.exif.DateTime
+      ? new Date(photo.value.exif.DateTime).toLocaleDateString()
+      : '';
+  });
+
+  const hasGPSData = computed(() => {
+    return latitude.value !== null && longitude.value !== null;
+  });
+
+  const sizes = ['small', 'medium', 'large'];
+
+  onMounted(() => {
+    fetchPhotoData();
+  });
+
+  function fetchPhotoData() {
+    fetch(`/photos/${year}/${id}.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(
+            `Network response was not ok: ${response.status} ${response.statusText}`
+          );
         }
+        return response.json();
+      })
+      .then((data) => {
+        photo.value = data;
+        prepareImageSources();
+        extractGPSData();
+        updateMetaTags(); // Update meta tags after fetching data
+      })
+      .catch((error) => {
+        console.error('Error fetching photo data:', error);
       });
+  }
 
-      // Get image URLs based on size for responsive image selection
-      const smallImage = this.imageLinks.small.jpeg;
-      const mediumImage = this.imageLinks.medium.jpeg;
-      const largeImage = this.imageLinks.large.jpeg;
+  function prepareImageSources() {
+    if (!photo.value || !photo.value.filenames) {
+      console.log('No photo or filenames data available:', photo.value);
+      return;
+    }
 
-      // Use responsive image selection
-      this.selectedImage = this.getResponsiveImage({
-        smallImage,
-        mediumImage,
-        largeImage,
+    const filenames = photo.value.filenames.filename;
+
+    // Initialize imageLinks
+    imageLinks.value = {
+      small: { jpeg: '', webp: '' },
+      medium: { jpeg: '', webp: '' },
+      large: { jpeg: '', webp: '' },
+    };
+
+    // Loop through filenames to populate imageLinks
+    filenames.forEach((filename) => {
+      if (filename.includes('-small')) {
+        if (filename.endsWith('.jpeg')) {
+          imageLinks.value.small.jpeg = filename;
+        } else if (filename.endsWith('.webp')) {
+          imageLinks.value.small.webp = filename;
+        }
+      } else if (filename.includes('-medium')) {
+        if (filename.endsWith('.jpeg')) {
+          imageLinks.value.medium.jpeg = filename;
+        } else if (filename.endsWith('.webp')) {
+          imageLinks.value.medium.webp = filename;
+        }
+      } else if (filename.includes('-large')) {
+        if (filename.endsWith('.jpeg')) {
+          imageLinks.value.large.jpeg = filename;
+        } else if (filename.endsWith('.webp')) {
+          imageLinks.value.large.webp = filename;
+        }
+      }
+    });
+
+    // Get image URLs based on size for responsive image selection
+    const smallImage = imageLinks.value.small.jpeg;
+    const mediumImage = imageLinks.value.medium.jpeg;
+    const largeImage = imageLinks.value.large.jpeg;
+
+    // Use responsive image selection
+    selectedImage.value = getResponsiveImage({
+      smallImage,
+      mediumImage,
+      largeImage,
+    });
+  }
+
+  function getResponsiveImage({ smallImage, mediumImage, largeImage }) {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 600) {
+      return smallImage || mediumImage || largeImage;
+    } else if (screenWidth <= 1000) {
+      return mediumImage || largeImage || smallImage;
+    } else {
+      return largeImage || mediumImage || smallImage;
+    }
+  }
+
+  function extractGPSData() {
+    if (
+      photo.value &&
+      photo.value.exif &&
+      photo.value.exif.GPSLocation &&
+      photo.value.exif.GPSLocation.Latitude &&
+      photo.value.exif.GPSLocation.Longitude
+    ) {
+      latitude.value = parseFloat(photo.value.exif.GPSLocation.Latitude);
+      longitude.value = parseFloat(photo.value.exif.GPSLocation.Longitude);
+    } else {
+      latitude.value = null;
+      longitude.value = null;
+    }
+  }
+
+  function goBackToYear() {
+    router.push(`/${year}`);
+  }
+
+  function goBackToAll() {
+    router.push(`/`);
+  }
+
+  function capitalize(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }
+
+  // Function to update meta tags using useHead
+  function updateMetaTags() {
+    if (photo.value) {
+      const imageUrl = baseUrl + imageLinks.value.small.jpeg;
+      const currentUrl = baseUrl + route.fullPath;
+
+      useHead({
+        title: `${photo.value.description} | JWS Pictures`,
+        meta: [
+          {
+            name: 'description',
+            content: photo.value.description,
+          },
+          {
+            property: 'og:title',
+            content: photo.value.description,
+          },
+          {
+            property: 'og:description',
+            content: photo.value.location,
+          },
+          {
+            property: 'og:image',
+            content: imageUrl,
+          },
+          {
+            property: 'og:url',
+            content: currentUrl,
+          },
+          {
+            property: 'og:type',
+            content: 'article',
+          },
+          {
+            name: 'twitter:card',
+            content: 'summary_large_image',
+          },
+          {
+            name: 'twitter:title',
+            content: photo.value.description,
+          },
+          {
+            name: 'twitter:description',
+            content: photo.value.location,
+          },
+          {
+            name: 'twitter:image',
+            content: imageUrl,
+          },
+        ],
       });
-    },
-    getResponsiveImage({ smallImage, mediumImage, largeImage }) {
-      const screenWidth = window.innerWidth;
-
-      if (screenWidth <= 600) {
-        return smallImage || mediumImage || largeImage;
-      } else if (screenWidth <= 1000) {
-        return mediumImage || largeImage || smallImage;
-      } else {
-        return largeImage || mediumImage || smallImage;
-      }
-    },
-    extractGPSData() {
-      if (
-        this.photo &&
-        this.photo.exif &&
-        this.photo.exif.GPSLocation &&
-        this.photo.exif.GPSLocation.Latitude &&
-        this.photo.exif.GPSLocation.Longitude
-      ) {
-        this.latitude = parseFloat(this.photo.exif.GPSLocation.Latitude);
-        this.longitude = parseFloat(this.photo.exif.GPSLocation.Longitude);
-      } else {
-        this.latitude = null;
-        this.longitude = null;
-      }
-    },
-    goBackToYear() {
-      this.$router.push(`/${this.year}`);
-    },
-    goBackToAll() {
-      this.$router.push(`/`);
-    },
-    capitalize(word) {
-      return word.charAt(0).toUpperCase() + word.slice(1);
-    },
-  },
-};
+    }
+  }
 </script>
 
 <style scoped>
-.photo-page {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top to allow scrolling */
-  min-height: 100vh;
-  overflow-y: auto; /* Allow vertical scrolling */
-}
-
-.card-header-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.sidebar-content {
-  margin-top: 1rem;
-}
-
-.buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-/* Adjust map container */
-.map-container {
-  margin-top: 1rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.leaflet-map {
-  width: 50%; /* 50% of parent width */
-  height: auto;
-}
-
-.leaflet-map > .leaflet-container {
-  width: 100%;
-  height: auto;
-  min-height: 450px; /* Increased height from 150px to 450px */
-}
-
-/* Allow the card to expand based on its content */
-.photo-page .p-card {
-  height: auto;
-}
-
-@media (min-width: 768px) and (orientation: landscape) {
-  .card-header-image {
-    height: 50vh;
+  .photo-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top to allow scrolling */
+    min-height: 100vh;
+    overflow-y: auto; /* Allow vertical scrolling */
   }
-}
 
-/* Styles for the image links table */
-.image-links-table {
-  width: 100%;
-  margin-top: 1rem;
-  border-collapse: collapse;
-}
+  .card-header-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
-.image-links-table th,
-.image-links-table td {
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-  text-align: center;
-}
+  .sidebar-content {
+    margin-top: 1rem;
+  }
 
-.image-links-table th {
-  background-color: #f5f5f5;
-}
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  /* Adjust map container */
+  .map-container {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .leaflet-map {
+    width: 50%; /* 50% of parent width */
+    height: auto;
+  }
+
+  .leaflet-map > .leaflet-container {
+    width: 100%;
+    height: auto;
+    min-height: 450px; /* Increased height from 150px to 450px */
+  }
+
+  /* Allow the card to expand based on its content */
+  .photo-page .p-card {
+    height: auto;
+  }
+
+  @media (min-width: 768px) and (orientation: landscape) {
+    .card-header-image {
+      height: 50vh;
+    }
+  }
+
+  /* Styles for the image links table */
+  .image-links-table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+  }
+
+  .image-links-table th,
+  .image-links-table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .image-links-table th {
+    background-color: #f5f5f5;
+  }
 </style>
