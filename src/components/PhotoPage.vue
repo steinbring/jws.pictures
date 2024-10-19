@@ -2,7 +2,7 @@
   <div class="photo-page">
     <Card :style="cardStyle">
       <template #header>
-        <img :src="selectedImage" :alt="`Photo taken at ${photo.location} on ${formatDate(photo.date)}`" class="card-header-image" />
+        <img :src="selectedImage" :alt="photo.description" class="card-header-image" />
       </template>
       <template #title>{{ photo.description }}</template>
       <template #subtitle>{{ photo.location }}</template>
