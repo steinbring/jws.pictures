@@ -78,7 +78,7 @@
 </template>
 
 <script setup>
-  import { ref, onMounted, computed } from 'vue';
+  import { ref, computed, onMounted } from 'vue';
   import { useHead } from '@vueuse/head';
   import { useRoute, useRouter } from 'vue-router';
   import Card from 'primevue/card';
@@ -112,48 +112,41 @@
     large: { jpeg: '', webp: '' },
   });
 
-  // Define reactive variables for meta tags
-  const metaTitle = ref('Default Title | JWS Pictures');
-  const metaDescription = ref('Default Description');
-  const metaImageUrl = ref('');
-  const metaUrl = ref(baseUrl + route.fullPath);
-
-  useHead({
-    title: metaTitle,
-    meta: [
-      { name: 'description', content: metaDescription },
-      { property: 'og:title', content: metaTitle },
-      { property: 'og:description', content: metaDescription },
-      { property: 'og:image', content: metaImageUrl },
-      { property: 'og:url', content: metaUrl },
-      { property: 'og:type', content: 'article' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: metaTitle },
-      { name: 'twitter:description', content: metaDescription },
-      { name: 'twitter:image', content: metaImageUrl },
-    ],
+  const formattedDate = computed(() => {
+    return photo.value && photo.value.exif && photo.value.exif.DateTime
+      ? new Date(photo.value.exif.DateTime).toLocaleDateString()
+      : '';
   });
+
+  const hasGPSData = computed(() => {
+    return latitude.value !== null && longitude.value !== null;
+  });
+
+  const sizes = ['small', 'medium', 'large'];
 
   onMounted(() => {
     fetchPhotoData();
   });
 
-  async function fetchPhotoData() {
-    try {
-      const response = await fetch(`/photos/${year}/${id}.json`);
-      if (!response.ok) {
-        throw new Error(
-          `Network response was not ok: ${response.status} ${response.statusText}`
-        );
-      }
-      const data = await response.json();
-      photo.value = data;
-      prepareImageSources();
-      extractGPSData();
-      updateMetaTags(); // Update meta tags after data is fetched
-    } catch (error) {
-      console.error('Error fetching photo data:', error);
-    }
+  function fetchPhotoData() {
+    fetch(`/photos/${year}/${id}.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(
+            `Network response was not ok: ${response.status} ${response.statusText}`
+          );
+        }
+        return response.json();
+      })
+      .then((data) => {
+        photo.value = data;
+        prepareImageSources();
+        extractGPSData();
+        updateMetaTags(); // Update meta tags after fetching data
+      })
+      .catch((error) => {
+        console.error('Error fetching photo data:', error);
+      });
   }
 
   function prepareImageSources() {
@@ -247,13 +240,57 @@
     return word.charAt(0).toUpperCase() + word.slice(1);
   }
 
-  // Update the reactive meta tag variables after data is fetched
+  // Function to update meta tags using useHead
   function updateMetaTags() {
     if (photo.value) {
-      metaTitle.value = `${photo.value.description} | JWS Pictures`;
-      metaDescription.value = photo.value.location || 'Photo location';
-      metaImageUrl.value = baseUrl + imageLinks.value.small.jpeg;
-      metaUrl.value = baseUrl + route.fullPath;
+      const imageUrl = baseUrl + imageLinks.value.small.jpeg;
+      const currentUrl = baseUrl + route.fullPath;
+
+      useHead({
+        title: `${photo.value.description} | JWS Pictures`,
+        meta: [
+          {
+            name: 'description',
+            content: photo.value.description,
+          },
+          {
+            property: 'og:title',
+            content: photo.value.location,
+          },
+          {
+            property: 'og:description',
+            content: photo.value.description,
+          },
+          {
+            property: 'og:image',
+            content: imageUrl,
+          },
+          {
+            property: 'og:url',
+            content: currentUrl,
+          },
+          {
+            property: 'og:type',
+            content: 'article',
+          },
+          {
+            name: 'twitter:card',
+            content: 'summary_large_image',
+          },
+          {
+            name: 'twitter:title',
+            content: photo.value.location,
+          },
+          {
+            name: 'twitter:description',
+            content: photo.value.description,
+          },
+          {
+            name: 'twitter:image',
+            content: imageUrl,
+          },
+        ],
+      });
     }
   }
 </script>
