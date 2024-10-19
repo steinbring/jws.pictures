@@ -242,6 +242,8 @@
 
   // Function to update meta tags using useHead
   function updateMetaTags() {
+    console.log("XX");
+    console.log(photo.value);
     if (photo.value) {
       const imageUrl = baseUrl + imageLinks.value.small.jpeg;
       const currentUrl = baseUrl + route.fullPath;
