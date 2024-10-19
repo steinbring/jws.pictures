@@ -38,9 +38,9 @@ export default {
             'No.',
         },
         {
-          question: 'How can I contact you?',
+          question: 'Can I use your images on my website?',
           answer:
-            'You can find my contact information at https://jws.dev/contact.html',
+            'If you wish to use any of the images, please contact Joe Steinbring for permission.',
         },
       ],
     };
