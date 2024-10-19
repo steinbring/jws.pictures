@@ -389,5 +389,28 @@
         },
         "location": "Wanhua District, Taipei City, Taiwan",
         "description": "I took this at Lungshan Temple in Taipei.  Returning home from Seoul, I had a 24-hour layover and wanted to see what I could.  I managed to catch this temple before the weather got dreadful."
+    },
+    {
+        "ID": "PXL_20240922_012954361",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240922_012954361-medium.jpeg",
+                "/photos/2024/PXL_20240922_012954361-small.webp",
+                "/photos/2024/PXL_20240922_012954361-small.jpeg",
+                "/photos/2024/PXL_20240922_012954361-medium.webp",
+                "/photos/2024/PXL_20240922_012954361-large.jpeg",
+                "/photos/2024/PXL_20240922_012954361-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-22T09:29:54+08:00",
+            "GPSLocation": {
+                "Latitude": "25.0374361111111",
+                "Longitude": "121.500002777778"
+            }
+        },
+        "location": "Wanhua District, Taipei City, Taiwan",
+        "description": "I took this at Lungshan Temple in Taipei. Returning home from Seoul, I had a 24-hour layover and wanted to see what I could. I managed to catch this temple before the weather got dreadful."
     }
 ]
