@@ -245,8 +245,11 @@
     console.log("XX");
     console.log(photo.value);
     if (photo.value) {
+      console.log("YY");
       const imageUrl = baseUrl + imageLinks.value.small.jpeg;
       const currentUrl = baseUrl + route.fullPath;
+      console.log(image.URL);
+      console.log(currentURL);
 
       useHead({
         title: `${photo.value.description} | JWS Pictures`,
