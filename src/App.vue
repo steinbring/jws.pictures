@@ -2,8 +2,10 @@
   <div id="app">
     <header>
       <div class="logo-container">
-        <img src="https://jws.social/fileserver/01E5SQ87G8HX9T4NYTPR147MJF/attachment/original/01HYRS8T6WMW6VMSHW8MKT2HC0.png" alt="JWS Pictures" />
-        <h1>JWS Pictures</h1>
+        <a href="https://jws.pictures">
+          <img src="https://jws.social/fileserver/01E5SQ87G8HX9T4NYTPR147MJF/attachment/original/01HYRS8T6WMW6VMSHW8MKT2HC0.png" alt="JWS Pictures" />
+          <h1>JWS Pictures</h1>
+        </a>
       </div>
       <Menubar :model="items" class="menubar" />
     </header>
