@@ -336,4 +336,25 @@
     <location>Hiroshima, Japan</location>
     <description>I took this at the Atomic Bomb Dome in Hiroshima. It was originally the Hiroshima Prefectural Industrial Promotion Hall.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240922_012731023</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240922_012731023-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240922_012731023-small.webp</filename>
+      <filename>/photos/2024/PXL_20240922_012731023-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240922_012731023-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240922_012731023-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240922_012731023-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-22T09:27:31+08:00</DateTime>
+      <GPSLocation>
+        <Latitude>25.0374166666667</Latitude>
+        <Longitude>121.499980555556</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Wanhua District, Taipei City, Taiwan</location>
+    <description>I took this at Lungshan Temple in Taipei.  Returning home from Seoul, I had a 24-hour layover and wanted to see what I could.  I managed to catch this temple before the weather got dreadful.</description>
+  </metadata>
 </items>
