@@ -248,7 +248,7 @@
       console.log("YY");
       const imageUrl = baseUrl + imageLinks.value.small.jpeg;
       const currentUrl = baseUrl + route.fullPath;
-      console.log(image.URL);
+      console.log(imageURL);
       console.log(currentURL);
 
       useHead({
