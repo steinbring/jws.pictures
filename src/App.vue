@@ -97,8 +97,8 @@
   header .logo-container a {
     display: flex;
     align-items: center;
-    text-decoration: none; /* Remove underlining */
-    color: inherit; /* Ensure the link inherits the text color */
+    text-decoration: none;
+    color: inherit;
   }
 
   header .logo-container img {
@@ -109,7 +109,14 @@
   header h1 {
     margin: 0;
     padding: 0;
-    color: white; /* Set the text color to white */
+    color: black; /* Default to black text for light mode */
+  }
+
+  /* Dark mode styles */
+  @media (prefers-color-scheme: dark) {
+    header h1 {
+      color: white; /* Change text color to white in dark mode */
+    }
   }
 
   .menubar {
