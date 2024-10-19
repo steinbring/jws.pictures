@@ -242,14 +242,9 @@
 
   // Function to update meta tags using useHead
   function updateMetaTags() {
-    console.log("XX");
-    console.log(photo.value);
     if (photo.value) {
-      console.log("YY");
       const imageUrl = baseUrl + imageLinks.value.small.jpeg;
       const currentUrl = baseUrl + route.fullPath;
-      console.log(imageLinks.value);
-      console.log(currentURL);
 
       useHead({
         title: `${photo.value.description} | JWS Pictures`,
@@ -260,11 +255,11 @@
           },
           {
             property: 'og:title',
-            content: photo.value.description,
+            content: photo.value.location,
           },
           {
             property: 'og:description',
-            content: photo.value.location,
+            content: photo.value.description,
           },
           {
             property: 'og:image',
@@ -284,11 +279,11 @@
           },
           {
             name: 'twitter:title',
-            content: photo.value.description,
+            content: photo.value.location,
           },
           {
             name: 'twitter:description',
-            content: photo.value.location,
+            content: photo.value.description,
           },
           {
             name: 'twitter:image',
