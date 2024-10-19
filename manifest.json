@@ -1,0 +1,21 @@
+{
+  "name": "JWS Pictures",
+  "short_name": "JWS Pictures",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "description": "Explore the stunning photography of Joe Steinbring.",
+  "icons": [
+    {
+      "src": "https://jws.social/fileserver/01E5SQ87G8HX9T4NYTPR147MJF/attachment/original/01HYRS8T6WMW6VMSHW8MKT2HC0.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://jws.social/fileserver/01E5SQ87G8HX9T4NYTPR147MJF/attachment/original/01HYRS8T6WMW6VMSHW8MKT2HC0.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
