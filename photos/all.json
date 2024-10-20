@@ -412,5 +412,28 @@
         },
         "location": "Wanhua District, Taipei City, Taiwan",
         "description": "I took this at Lungshan Temple in Taipei. Returning home from Seoul, I had a 24-hour layover and wanted to see what I could. I managed to catch this temple before the weather got dreadful."
+    },
+    {
+        "ID": "PXL_20240915_075335386",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240915_075335386-medium.jpeg",
+                "/photos/2024/PXL_20240915_075335386-small.webp",
+                "/photos/2024/PXL_20240915_075335386-small.jpeg",
+                "/photos/2024/PXL_20240915_075335386-medium.webp",
+                "/photos/2024/PXL_20240915_075335386-large.jpeg",
+                "/photos/2024/PXL_20240915_075335386-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-15T16:53:35+09:00",
+            "GPSLocation": {
+                "Latitude": "35.0170611111111",
+                "Longitude": "135.671944444444"
+            }
+        },
+        "location": "Kyoto, Japan",
+        "description": "After a long day in Kyoto, I took this at the Arashiyama Bamboo Forest, a little to the north of the entrance to Tenryu-ji Temple."
     }
 ]
