@@ -399,4 +399,25 @@
     <location>Kyoto, Japan</location>
     <description>After a long day in Kyoto, I took this at the Arashiyama Bamboo Forest, a little to the north of the entrance to Tenryu-ji Temple.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240915_063440608</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240915_063440608-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_063440608-small.webp</filename>
+      <filename>/photos/2024/PXL_20240915_063440608-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240915_063440608-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_063440608-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_063440608-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-15T15:34:40+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>35.0396083333333</Latitude>
+        <Longitude>135.728313888889</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Kyoto, Japan</location>
+    <description>I took this at Kinkaku-ji temple in Kyoto. This Zen temple in northern Kyoto has two floors completely covered in gold leaf.</description>
+  </metadata>
 </items>

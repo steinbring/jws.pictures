@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240915_063440608",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240915_063440608-medium.jpeg",
+            "/photos/2024/PXL_20240915_063440608-small.webp",
+            "/photos/2024/PXL_20240915_063440608-medium.webp",
+            "/photos/2024/PXL_20240915_063440608-small.jpeg",
+            "/photos/2024/PXL_20240915_063440608-large.jpeg",
+            "/photos/2024/PXL_20240915_063440608-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-15T15:34:40+09:00",
+        "GPSLocation": {
+            "Latitude": "35.0396083333333",
+            "Longitude": "135.728313888889"
+        }
+    },
+    "location": "Kyoto, Japan",
+    "description": "I took this at Kinkaku-ji temple in Kyoto. This Zen temple in northern Kyoto has two floors completely covered in gold leaf."
+}
