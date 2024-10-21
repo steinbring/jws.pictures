@@ -458,5 +458,28 @@
         },
         "location": "Kyoto, Japan",
         "description": "I took this at Kinkaku-ji temple in Kyoto. This Zen temple in northern Kyoto has two floors completely covered in gold leaf."
+    },
+    {
+        "ID": "PXL_20240915_032532618",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240915_032532618-medium.jpeg",
+                "/photos/2024/PXL_20240915_032532618-small.webp",
+                "/photos/2024/PXL_20240915_032532618-medium.webp",
+                "/photos/2024/PXL_20240915_032532618-small.jpeg",
+                "/photos/2024/PXL_20240915_032532618-large.jpeg",
+                "/photos/2024/PXL_20240915_032532618-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-15T12:25:32+09:00",
+            "GPSLocation": {
+                "Latitude": "34.9952638888889",
+                "Longitude": "135.783775"
+            }
+        },
+        "location": "Kyoto, Japan",
+        "description": "This is the Kiyomizu-dera Sanjunoto in Kyoto. The three-story pagoda at Kiyomizu-dera is 31 meters high and one of the tallest in Japan."
     }
 ]
