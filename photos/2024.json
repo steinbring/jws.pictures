@@ -481,5 +481,28 @@
         },
         "location": "Kyoto, Japan",
         "description": "This is the Kiyomizu-dera Sanjunoto in Kyoto. The three-story pagoda at Kiyomizu-dera is 31 meters high and one of the tallest in Japan."
+    },
+    {
+        "ID": "PXL_20240915_035218078",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240915_035218078-medium.jpeg",
+                "/photos/2024/PXL_20240915_035218078-small.webp",
+                "/photos/2024/PXL_20240915_035218078-small.jpeg",
+                "/photos/2024/PXL_20240915_035218078-medium.webp",
+                "/photos/2024/PXL_20240915_035218078-large.jpeg",
+                "/photos/2024/PXL_20240915_035218078-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-15T12:52:18+09:00",
+            "GPSLocation": {
+                "Latitude": "34.9947055555556",
+                "Longitude": "135.785630555556"
+            }
+        },
+        "location": "Kyoto, Japan",
+        "description": "I took this at the Kiyomizu-dera Amidado Buddhist temple in Kyoto. The temple was initially associated with the Hosso sect, one of the oldest schools within Japanese Buddhism, but formed its own Kita Hosso sect in 1965. In 1994, the temple was added to the list of World Heritage Sites."
     }
 ]
