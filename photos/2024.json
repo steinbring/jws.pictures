@@ -527,5 +527,28 @@
         },
         "location": "Kyoto, Japan",
         "description": "I took this near the Jukkoku Bridge in Kyoto."
+    },
+    {
+        "ID": "PXL_20240911_055409132",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240911_055409132-medium.jpeg",
+                "/photos/2024/PXL_20240911_055409132-small.webp",
+                "/photos/2024/PXL_20240911_055409132-small.jpeg",
+                "/photos/2024/PXL_20240911_055409132-large.jpeg",
+                "/photos/2024/PXL_20240911_055409132-medium.webp",
+                "/photos/2024/PXL_20240911_055409132-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-11T14:54:11+09:00",
+            "GPSLocation": {
+                "Latitude": "35.2999166666667",
+                "Longitude": "139.478325"
+            }
+        },
+        "location": "Fujisawa, Japan",
+        "description": "I took this from the top of the Enoshima Sea Candle on the small tidal island of Enoshima."
     }
 ]
