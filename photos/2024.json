@@ -573,5 +573,28 @@
         },
         "location": "Kamakura, Japan",
         "description": "This is the Kamakura Daibutsu at Kotoku-in in Kamakura.  It was swelteringly hot there, but I still paid to climb into the Buddha."
+    },
+    {
+        "ID": "PXL_20240918_064644516",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240918_064644516-medium.jpeg",
+                "/photos/2024/PXL_20240918_064644516-small.webp",
+                "/photos/2024/PXL_20240918_064644516-small.jpeg",
+                "/photos/2024/PXL_20240918_064644516-medium.webp",
+                "/photos/2024/PXL_20240918_064644516-large.jpeg",
+                "/photos/2024/PXL_20240918_064644516-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-18T15:46:44+09:00",
+            "GPSLocation": {
+                "Latitude": "37.9109722222222",
+                "Longitude": "126.706036111111"
+            }
+        },
+        "location": "Paju-si, Gyeonggi-do, South Korea",
+        "description": "I took this at the New Dora Observatory, along the DMZ in South Korea. The original Dora Observatory, which this one replaces, was just a few yards from the bus. They asked us not to photograph it because it is part of an active military installation.  The line you can see going through the image is the South Korean side of the DMZ."
     }
 ]
