@@ -596,5 +596,28 @@
         },
         "location": "Paju-si, Gyeonggi-do, South Korea",
         "description": "I took this at the New Dora Observatory, along the DMZ in South Korea. The original Dora Observatory, which this one replaces, was just a few yards from the bus. They asked us not to photograph it because it is part of an active military installation.  The line you can see going through the image is the South Korean side of the DMZ."
+    },
+    {
+        "ID": "PXL_20240914_060218649",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240914_060218649-medium.jpeg",
+                "/photos/2024/PXL_20240914_060218649-small.webp",
+                "/photos/2024/PXL_20240914_060218649-small.jpeg",
+                "/photos/2024/PXL_20240914_060218649-medium.webp",
+                "/photos/2024/PXL_20240914_060218649-large.jpeg",
+                "/photos/2024/PXL_20240914_060218649-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-14T15:02:18+09:00",
+            "GPSLocation": {
+                "Latitude": "34.6809694444444",
+                "Longitude": "135.844211111111"
+            }
+        },
+        "location": "Nara, Japan",
+        "description": "The baby dear would like a cracker."
     }
 ]
