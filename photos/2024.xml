@@ -567,4 +567,25 @@
     <location>Nara, Japan</location>
     <description>The baby deer would like a cracker.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240909_060758418</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240909_060758418-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_060758418-small.webp</filename>
+      <filename>/photos/2024/PXL_20240909_060758418-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_060758418-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240909_060758418-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_060758418-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-09T15:07:58+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>35.6970055555556</Latitude>
+        <Longitude>139.793469444444</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Sumida City, Tokyo, Japan</location>
+    <description>I was lucky enough to get tickets for the Grand Tournament at the Ryogoku Kokugikan National Sumo Arena. Most of my photos of the matches could be clearer, but the seats weren't great.</description>
+  </metadata>
 </items>
