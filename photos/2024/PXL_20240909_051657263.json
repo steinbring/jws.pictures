@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240909_051657263",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240909_051657263-medium.jpeg",
+            "/photos/2024/PXL_20240909_051657263-small.webp",
+            "/photos/2024/PXL_20240909_051657263-small.jpeg",
+            "/photos/2024/PXL_20240909_051657263-medium.webp",
+            "/photos/2024/PXL_20240909_051657263-large.jpeg",
+            "/photos/2024/PXL_20240909_051657263-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-09T14:16:57+09:00",
+        "GPSLocation": {
+            "Latitude": "35.6970222222222",
+            "Longitude": "139.793461111111"
+        }
+    },
+    "location": "Sumida City, Tokyo, Japan",
+    "description": "I was lucky enough to get tickets for the Grand Tournament at the Ryogoku Kokugikan National Sumo Arena. Most of my photos of the matches could be clearer, but the seats weren't great."
+}
