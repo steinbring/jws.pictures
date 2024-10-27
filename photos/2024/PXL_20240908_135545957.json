@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240908_135545957",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240908_135545957-medium.jpeg",
+            "/photos/2024/PXL_20240908_135545957-small.webp",
+            "/photos/2024/PXL_20240908_135545957-medium.webp",
+            "/photos/2024/PXL_20240908_135545957-small.jpeg",
+            "/photos/2024/PXL_20240908_135545957-large.jpeg",
+            "/photos/2024/PXL_20240908_135545957-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-08T22:55:45+09:00",
+        "GPSLocation": {
+            "Latitude": "35.6953638888889",
+            "Longitude": "139.767591666667"
+        }
+    },
+    "location": "Chiyoda City, Tokyo, Japan",
+    "description": "I took this on the first night I was in Tokyo.  I went for a late-night walk around Akihabara and took this on the way back to the hotel."
+}
