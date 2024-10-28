@@ -630,4 +630,25 @@
     <location>Chiyoda City, Tokyo, Japan</location>
     <description>I took this on the first night I was in Tokyo.  I went for a late-night walk around Akihabara and took this on the way back to the hotel.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240915_074440371</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240915_074440371-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_074440371-small.webp</filename>
+      <filename>/photos/2024/PXL_20240915_074440371-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_074440371-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240915_074440371-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_074440371-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-15T16:44:40+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>35.0171861111111</Latitude>
+        <Longitude>135.674838888889</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Kyoto, Japan</location>
+    <description>I took this near the Nonomiya Shrine in Kyoto.  It was later in the day, and the sun was starting to go down.</description>
+  </metadata>
 </items>

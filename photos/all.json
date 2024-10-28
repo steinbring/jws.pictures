@@ -688,5 +688,28 @@
         },
         "location": "Chiyoda City, Tokyo, Japan",
         "description": "I took this on the first night I was in Tokyo.  I went for a late-night walk around Akihabara and took this on the way back to the hotel."
+    },
+    {
+        "ID": "PXL_20240915_074440371",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240915_074440371-medium.jpeg",
+                "/photos/2024/PXL_20240915_074440371-small.webp",
+                "/photos/2024/PXL_20240915_074440371-small.jpeg",
+                "/photos/2024/PXL_20240915_074440371-medium.webp",
+                "/photos/2024/PXL_20240915_074440371-large.jpeg",
+                "/photos/2024/PXL_20240915_074440371-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-15T16:44:40+09:00",
+            "GPSLocation": {
+                "Latitude": "35.0171861111111",
+                "Longitude": "135.674838888889"
+            }
+        },
+        "location": "Kyoto, Japan",
+        "description": "I took this near the Nonomiya Shrine in Kyoto.  It was later in the day, and the sun was starting to go down."
     }
 ]
