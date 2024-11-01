@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+  <metadata>
+    <ID>MVIMG_20181106_092538</ID>
+    <filenames>
+      <filename>/photos/2018/MVIMG_20181106_092538-medium.jpeg</filename>
+      <filename>/photos/2018/MVIMG_20181106_092538-small.webp</filename>
+      <filename>/photos/2018/MVIMG_20181106_092538-small.jpeg</filename>
+      <filename>/photos/2018/MVIMG_20181106_092538-medium.webp</filename>
+      <filename>/photos/2018/MVIMG_20181106_092538-large.jpeg</filename>
+      <filename>/photos/2018/MVIMG_20181106_092538-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 2</Camera>
+      <DateTime>2018-11-06T09:25:38+08:00</DateTime>
+      <GPSLocation>
+        <Latitude>31.3182277777778</Latitude>
+        <Longitude>120.588969444444</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Suzhou, Jiangsu, China</location>
+    <description>I took this in 2018 in Suzhou.  It was my first time in Asia.</description>
+  </metadata>
+</items>
