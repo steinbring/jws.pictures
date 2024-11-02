@@ -711,5 +711,28 @@
         },
         "location": "Kyoto, Japan",
         "description": "I took this near the Nonomiya Shrine in Kyoto.  It was later in the day, and the sun was starting to go down."
+    },
+    {
+        "ID": "PXL_20240914_022207143",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240914_022207143-medium.jpeg",
+                "/photos/2024/PXL_20240914_022207143-small.webp",
+                "/photos/2024/PXL_20240914_022207143-medium.webp",
+                "/photos/2024/PXL_20240914_022207143-small.jpeg",
+                "/photos/2024/PXL_20240914_022207143-large.jpeg",
+                "/photos/2024/PXL_20240914_022207143-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-14T11:22:07+09:00",
+            "GPSLocation": {
+                "Latitude": "34.6850888888889",
+                "Longitude": "135.839941666667"
+            }
+        },
+        "location": "Nara, Japan",
+        "description": "Do you intervene? Left them fight? 🤷‍♂️"
     }
 ]

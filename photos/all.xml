@@ -672,4 +672,25 @@
     <location>Suzhou, Jiangsu, China</location>
     <description>I took this in 2018 in Suzhou.  It was my first time in Asia.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240914_022207143</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240914_022207143-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240914_022207143-small.webp</filename>
+      <filename>/photos/2024/PXL_20240914_022207143-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240914_022207143-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240914_022207143-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240914_022207143-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-14T11:22:07+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>34.6850888888889</Latitude>
+        <Longitude>135.839941666667</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Nara, Japan</location>
+    <description>Do you intervene? Left them fight? 🤷‍♂️</description>
+  </metadata>
 </items>
