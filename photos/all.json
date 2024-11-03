@@ -826,5 +826,28 @@
         },
         "location": "Wuxi, China",
         "description": "This is the Grand Buddha at Ling Shan.  It was completed at the end of 1996 and is 88 meters tall."
+    },
+    {
+        "ID": "IMG_20181105_100010-EFFECTS",
+        "filenames": {
+            "filename": [
+                "/photos/2018/IMG_20181105_100010-EFFECTS-medium.jpeg",
+                "/photos/2018/IMG_20181105_100010-EFFECTS-small.webp",
+                "/photos/2018/IMG_20181105_100010-EFFECTS-small.jpeg",
+                "/photos/2018/IMG_20181105_100010-EFFECTS-medium.webp",
+                "/photos/2018/IMG_20181105_100010-EFFECTS-large.jpeg",
+                "/photos/2018/IMG_20181105_100010-EFFECTS-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 2",
+            "DateTime": "2018-11-05T10:00:10+08:00",
+            "GPSLocation": {
+                "Latitude": "39.8822222222222",
+                "Longitude": "116.406636111111"
+            }
+        },
+        "location": "Beijing, China",
+        "description": "I took this at the Temple of Heaven.  Located south of the Forbidden City on the east side of Yongnei Dajie, the original Altar of Heaven and Earth was completed together with the Forbidden City in 1420, the eighteenth year of the reign of the Ming Emperor Yongle."
     }
 ]
