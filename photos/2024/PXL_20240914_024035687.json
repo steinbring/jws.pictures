@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240914_024035687",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240914_024035687-medium.jpeg",
+            "/photos/2024/PXL_20240914_024035687-small.webp",
+            "/photos/2024/PXL_20240914_024035687-medium.webp",
+            "/photos/2024/PXL_20240914_024035687-small.jpeg",
+            "/photos/2024/PXL_20240914_024035687-large.jpeg",
+            "/photos/2024/PXL_20240914_024035687-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-14T11:40:35+09:00",
+        "GPSLocation": {
+            "Latitude": "34.6879472222222",
+            "Longitude": "135.839847222222"
+        }
+    },
+    "location": "Nara, Japan",
+    "description": "This is the Great Buddha Hall in Nara.  Emperor Shomu ordered the monk-architect Roben to build a temple at Nara between 728 and 749."
+}
