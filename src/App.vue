@@ -44,7 +44,10 @@
         { label: '2024', command: () => router.push('/2024') },
         { label: '2023', command: () => router.push('/2023') },
         { label: '2022', command: () => router.push('/2022') },
-        // Add more years as needed
+        { label: '2021', command: () => router.push('/2021') },
+        { label: '2020', command: () => router.push('/2020') },
+        { label: '2019', command: () => router.push('/2019') },
+        { label: '2018', command: () => router.push('/2018') },
       ],
     },
     {
