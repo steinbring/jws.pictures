@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240915_062418172",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240915_062418172-medium.jpeg",
+            "/photos/2024/PXL_20240915_062418172-small.webp",
+            "/photos/2024/PXL_20240915_062418172-small.jpeg",
+            "/photos/2024/PXL_20240915_062418172-medium.webp",
+            "/photos/2024/PXL_20240915_062418172-large.jpeg",
+            "/photos/2024/PXL_20240915_062418172-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-15T15:24:18+09:00",
+        "GPSLocation": {
+            "Latitude": "35.0388416666667",
+            "Longitude": "135.72885"
+        }
+    },
+    "location": "Kyoto, Japan",
+    "description": "This is the Golden Pavilion in Kyoto. It has burned down numerous times throughout its history, including twice during the Onin War, a civil war that destroyed much of Kyoto, and once again, more recently, in 1950, when a monk set it on fire. The present structure was rebuilt in 1955."
+}
