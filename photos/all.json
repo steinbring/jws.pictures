@@ -803,5 +803,28 @@
         },
         "location": "Kyoto, Japan",
         "description": "This is the Golden Pavilion in Kyoto. It has burned down numerous times throughout its history, including twice during the Onin War, a civil war that destroyed much of Kyoto, and once again, more recently, in 1950, when a monk set it on fire. The present structure was rebuilt in 1955."
+    },
+    {
+        "ID": "MVIMG_20181106_160711",
+        "filenames": {
+            "filename": [
+                "/photos/2018/MVIMG_20181106_160711-medium.jpeg",
+                "/photos/2018/MVIMG_20181106_160711-small.webp",
+                "/photos/2018/MVIMG_20181106_160711-medium.webp",
+                "/photos/2018/MVIMG_20181106_160711-small.jpeg",
+                "/photos/2018/MVIMG_20181106_160711-large.jpeg",
+                "/photos/2018/MVIMG_20181106_160711-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 2",
+            "DateTime": "2018-11-06T16:07:11+08:00",
+            "GPSLocation": {
+                "Latitude": "31.4313888888889",
+                "Longitude": "120.091997222222"
+            }
+        },
+        "location": "Wuxi, China",
+        "description": "This is the Grand Buddha at Ling Shan.  It was completed at the end of 1996 and is 88 meters tall."
     }
 ]

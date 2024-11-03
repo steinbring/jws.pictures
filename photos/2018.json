@@ -21,5 +21,28 @@
         },
         "location": "Suzhou, Jiangsu, China",
         "description": "I took this in 2018 in Suzhou.  It was my first time in Asia."
+    },
+    {
+        "ID": "MVIMG_20181106_160711",
+        "filenames": {
+            "filename": [
+                "/photos/2018/MVIMG_20181106_160711-medium.jpeg",
+                "/photos/2018/MVIMG_20181106_160711-small.webp",
+                "/photos/2018/MVIMG_20181106_160711-medium.webp",
+                "/photos/2018/MVIMG_20181106_160711-small.jpeg",
+                "/photos/2018/MVIMG_20181106_160711-large.jpeg",
+                "/photos/2018/MVIMG_20181106_160711-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 2",
+            "DateTime": "2018-11-06T16:07:11+08:00",
+            "GPSLocation": {
+                "Latitude": "31.4313888888889",
+                "Longitude": "120.091997222222"
+            }
+        },
+        "location": "Wuxi, China",
+        "description": "This is the Grand Buddha at Ling Shan.  It was completed at the end of 1996 and is 88 meters tall."
     }
 ]
