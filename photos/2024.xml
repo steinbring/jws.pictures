@@ -735,4 +735,25 @@
     <location>Seoul, South Korea</location>
     <description>Seoul has you if you are up for Chicago Pizza or Belgian Waffles.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240921_030944352</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240921_030944352-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_030944352-small.webp</filename>
+      <filename>/photos/2024/PXL_20240921_030944352-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_030944352-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240921_030944352-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_030944352-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-21T12:09:44+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>37.5651388888889</Latitude>
+        <Longitude>126.97575</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Seoul, South Korea</location>
+    <description>This is the Gwangmyeongmun Gate at Deoksugung Palace.</description>
+  </metadata>
 </items>

@@ -872,5 +872,28 @@
         },
         "location": "Seoul, South Korea",
         "description": "Seoul has you if you are up for Chicago Pizza or Belgian Waffles."
+    },
+    {
+        "ID": "PXL_20240921_030944352",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240921_030944352-medium.jpeg",
+                "/photos/2024/PXL_20240921_030944352-small.webp",
+                "/photos/2024/PXL_20240921_030944352-small.jpeg",
+                "/photos/2024/PXL_20240921_030944352-medium.webp",
+                "/photos/2024/PXL_20240921_030944352-large.jpeg",
+                "/photos/2024/PXL_20240921_030944352-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-21T12:09:44+09:00",
+            "GPSLocation": {
+                "Latitude": "37.5651388888889",
+                "Longitude": "126.97575"
+            }
+        },
+        "location": "Seoul, South Korea",
+        "description": "This is the Gwangmyeongmun Gate at Deoksugung Palace."
     }
 ]
