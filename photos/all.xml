@@ -819,4 +819,25 @@
     <location>Seoul, South Korea</location>
     <description>This is the Gwangmyeongmun Gate at Deoksugung Palace.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240920_130626077.NIGHT</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240920_130626077.NIGHT-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240920_130626077.NIGHT-small.webp</filename>
+      <filename>/photos/2024/PXL_20240920_130626077.NIGHT-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240920_130626077.NIGHT-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240920_130626077.NIGHT-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240920_130626077.NIGHT-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-20T22:06:26+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>37.5699972222222</Latitude>
+        <Longitude>126.983661111111</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Seoul, South Korea</location>
+    <description>This is the Bosingak Bell Pavilion in Jongno 2-ga, Jongno-gu.</description>
+  </metadata>
 </items>

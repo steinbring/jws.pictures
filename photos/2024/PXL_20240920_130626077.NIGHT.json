@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240920_130626077.NIGHT",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240920_130626077.NIGHT-medium.jpeg",
+            "/photos/2024/PXL_20240920_130626077.NIGHT-small.webp",
+            "/photos/2024/PXL_20240920_130626077.NIGHT-small.jpeg",
+            "/photos/2024/PXL_20240920_130626077.NIGHT-medium.webp",
+            "/photos/2024/PXL_20240920_130626077.NIGHT-large.jpeg",
+            "/photos/2024/PXL_20240920_130626077.NIGHT-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-20T22:06:26+09:00",
+        "GPSLocation": {
+            "Latitude": "37.5699972222222",
+            "Longitude": "126.983661111111"
+        }
+    },
+    "location": "Seoul, South Korea",
+    "description": "This is the Bosingak Bell Pavilion in Jongno 2-ga, Jongno-gu."
+}
