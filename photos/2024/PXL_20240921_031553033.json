@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240921_031553033",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240921_031553033-medium.jpeg",
+            "/photos/2024/PXL_20240921_031553033-small.webp",
+            "/photos/2024/PXL_20240921_031553033-small.jpeg",
+            "/photos/2024/PXL_20240921_031553033-medium.webp",
+            "/photos/2024/PXL_20240921_031553033-large.jpeg",
+            "/photos/2024/PXL_20240921_031553033-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-21T12:15:53+09:00",
+        "GPSLocation": {
+            "Latitude": "37.564875",
+            "Longitude": "126.976791666667"
+        }
+    },
+    "location": "Seoul, South Korea",
+    "description": "Seoul has you if you are up for Chicago Pizza or Belgian Waffles."
+}

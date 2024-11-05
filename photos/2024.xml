@@ -714,4 +714,25 @@
     <location>Kyoto, Japan</location>
     <description>This is the Golden Pavilion in Kyoto. It has burned down numerous times throughout its history, including twice during the Onin War, a civil war that destroyed much of Kyoto, and once again, more recently, in 1950, when a monk set it on fire. The present structure was rebuilt in 1955.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240921_031553033</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240921_031553033-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_031553033-small.webp</filename>
+      <filename>/photos/2024/PXL_20240921_031553033-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_031553033-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240921_031553033-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_031553033-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-21T12:15:53+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>37.564875</Latitude>
+        <Longitude>126.976791666667</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Seoul, South Korea</location>
+    <description>Seoul has you if you are up for Chicago Pizza or Belgian Waffles.</description>
+  </metadata>
 </items>
