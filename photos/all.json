@@ -918,5 +918,28 @@
         },
         "location": "Seoul, South Korea",
         "description": "This is the Bosingak Bell Pavilion in Jongno 2-ga, Jongno-gu."
+    },
+    {
+        "ID": "PXL_20240909_063031701",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240909_063031701-medium.jpeg",
+                "/photos/2024/PXL_20240909_063031701-small.webp",
+                "/photos/2024/PXL_20240909_063031701-small.jpeg",
+                "/photos/2024/PXL_20240909_063031701-medium.webp",
+                "/photos/2024/PXL_20240909_063031701-large.jpeg",
+                "/photos/2024/PXL_20240909_063031701-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-09T15:30:31+09:00",
+            "GPSLocation": {
+                "Latitude": "35.6971611111111",
+                "Longitude": "139.793125"
+            }
+        },
+        "location": "Sumida City, Tokyo, Japan",
+        "description": "I took this at the Ryogoku Kokugikan National Sumo Arena during the 2024 Grand Tournament.  New career?"
     }
 ]
