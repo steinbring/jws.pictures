@@ -872,5 +872,28 @@
         },
         "location": "Sumida City, Tokyo, Japan",
         "description": "I took this at the Ryogoku Kokugikan National Sumo Arena during the 2024 Grand Tournament.  New career?"
+    },
+    {
+        "ID": "PXL_20240908_224211317",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240908_224211317-medium.jpeg",
+                "/photos/2024/PXL_20240908_224211317-small.webp",
+                "/photos/2024/PXL_20240908_224211317-medium.webp",
+                "/photos/2024/PXL_20240908_224211317-small.jpeg",
+                "/photos/2024/PXL_20240908_224211317-large.jpeg",
+                "/photos/2024/PXL_20240908_224211317-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-09T07:42:11+09:00",
+            "GPSLocation": {
+                "Latitude": "35.6745944444444",
+                "Longitude": "139.736236111111"
+            }
+        },
+        "location": "Minato City, Tokyo, Japan",
+        "description": "This was directly across the street from my hotel in Akasaka."
     }
 ]

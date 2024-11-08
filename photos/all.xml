@@ -861,4 +861,25 @@
     <location>Sumida City, Tokyo, Japan</location>
     <description>I took this at the Ryogoku Kokugikan National Sumo Arena during the 2024 Grand Tournament.  New career?</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240908_224211317</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240908_224211317-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240908_224211317-small.webp</filename>
+      <filename>/photos/2024/PXL_20240908_224211317-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240908_224211317-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240908_224211317-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240908_224211317-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-09T07:42:11+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>35.6745944444444</Latitude>
+        <Longitude>139.736236111111</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Minato City, Tokyo, Japan</location>
+    <description>This was directly across the street from my hotel in Akasaka.</description>
+  </metadata>
 </items>
