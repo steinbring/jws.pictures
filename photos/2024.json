@@ -895,5 +895,28 @@
         },
         "location": "Minato City, Tokyo, Japan",
         "description": "This was directly across the street from my hotel in Akasaka."
+    },
+    {
+        "ID": "PXL_20240916_090821968.MP",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240916_090821968.MP-medium.jpeg",
+                "/photos/2024/PXL_20240916_090821968.MP-small.webp",
+                "/photos/2024/PXL_20240916_090821968.MP-small.jpeg",
+                "/photos/2024/PXL_20240916_090821968.MP-medium.webp",
+                "/photos/2024/PXL_20240916_090821968.MP-large.jpeg",
+                "/photos/2024/PXL_20240916_090821968.MP-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-16T18:08:21+09:00",
+            "GPSLocation": {
+                "Latitude": "34.4032638888889",
+                "Longitude": "134.223505555556"
+            }
+        },
+        "location": "South of Japan",
+        "description": "I took this on the overnight ferry between Osaka and Busan."
     }
 ]
