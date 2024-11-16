@@ -1,0 +1,23 @@
+{
+    "ID": "MVIMG_20181107_135856",
+    "filenames": {
+        "filename": [
+            "/photos/2018/MVIMG_20181107_135856-medium.jpeg",
+            "/photos/2018/MVIMG_20181107_135856-small.webp",
+            "/photos/2018/MVIMG_20181107_135856-medium.webp",
+            "/photos/2018/MVIMG_20181107_135856-small.jpeg",
+            "/photos/2018/MVIMG_20181107_135856-large.jpeg",
+            "/photos/2018/MVIMG_20181107_135856-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 2",
+        "DateTime": "2018-11-07T13:58:56+08:00",
+        "GPSLocation": {
+            "Latitude": "30.8201861111111",
+            "Longitude": "120.660630555556"
+        }
+    },
+    "location": "Jiaxing, Zhejiang, China",
+    "description": "This is fast food in Jiaxing.  I took this at a truck stop in Xiuzhou District."
+}
