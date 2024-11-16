@@ -941,5 +941,28 @@
         },
         "location": "Chiyoda City, Tokyo, Japan",
         "description": "I took this the day after I went to the Sumo matches. The guy next to me at the matches talked about how he was offered horse meat and rejected it.  I couldn't get horse meat out of my mind, so I found Umakabai!, which serves horse sashimi."
+    },
+    {
+        "ID": "PXL_20240911_041733233.MP",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240911_041733233.MP-medium.jpeg",
+                "/photos/2024/PXL_20240911_041733233.MP-small.webp",
+                "/photos/2024/PXL_20240911_041733233.MP-medium.webp",
+                "/photos/2024/PXL_20240911_041733233.MP-small.jpeg",
+                "/photos/2024/PXL_20240911_041733233.MP-large.jpeg",
+                "/photos/2024/PXL_20240911_041733233.MP-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-11T13:17:33+09:00",
+            "GPSLocation": {
+                "Latitude": "35.3120805555556",
+                "Longitude": "139.533119444444"
+            }
+        },
+        "location": "Kamakura, Kanagawa, Japan",
+        "description": "I took this at the Hasedera Buddhist temple in Kamakura.  I remember seeing prayer wheels like this when I was in Nepal."
     }
 ]
