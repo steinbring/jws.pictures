@@ -966,4 +966,25 @@
     <location>Jiaxing, Zhejiang, China</location>
     <description>This is fast food in Jiaxing.  I took this at a truck stop in Xiuzhou District.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240912_103337974</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240912_103337974-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240912_103337974-small.webp</filename>
+      <filename>/photos/2024/PXL_20240912_103337974-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240912_103337974-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240912_103337974-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240912_103337974-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-12T19:33:37+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>34.6693333333333</Latitude>
+        <Longitude>135.503275</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Osaka, Japan</location>
+    <description>I took this in the Chuo Ward in Osaka.</description>
+  </metadata>
 </items>

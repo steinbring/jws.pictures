@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240912_103337974",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240912_103337974-medium.jpeg",
+            "/photos/2024/PXL_20240912_103337974-small.webp",
+            "/photos/2024/PXL_20240912_103337974-small.jpeg",
+            "/photos/2024/PXL_20240912_103337974-medium.webp",
+            "/photos/2024/PXL_20240912_103337974-large.jpeg",
+            "/photos/2024/PXL_20240912_103337974-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-12T19:33:37+09:00",
+        "GPSLocation": {
+            "Latitude": "34.6693333333333",
+            "Longitude": "135.503275"
+        }
+    },
+    "location": "Osaka, Japan",
+    "description": "I took this in the Chuo Ward in Osaka."
+}
