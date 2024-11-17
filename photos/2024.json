@@ -987,5 +987,28 @@
         },
         "location": "Osaka, Japan",
         "description": "I took this in the Chuo Ward in Osaka."
+    },
+    {
+        "ID": "PXL_20240912_071551290",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240912_071551290-medium.jpeg",
+                "/photos/2024/PXL_20240912_071551290-small.webp",
+                "/photos/2024/PXL_20240912_071551290-medium.webp",
+                "/photos/2024/PXL_20240912_071551290-small.jpeg",
+                "/photos/2024/PXL_20240912_071551290-large.jpeg",
+                "/photos/2024/PXL_20240912_071551290-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-12T16:15:51+09:00",
+            "GPSLocation": {
+                "Latitude": "34.6692",
+                "Longitude": "135.501769444444"
+            }
+        },
+        "location": "Osaka, Japan",
+        "description": "This was my first day in Osaka, and Glica Man was on my list of places to visit."
     }
 ]
