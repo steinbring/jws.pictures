@@ -1102,5 +1102,28 @@
         },
         "location": "Osaka, Japan",
         "description": "This was my first day in Osaka, and Glica Man was on my list of places to visit."
+    },
+    {
+        "ID": "PXL_20240911_034944575",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240911_034944575-medium.jpeg",
+                "/photos/2024/PXL_20240911_034944575-small.webp",
+                "/photos/2024/PXL_20240911_034944575-medium.webp",
+                "/photos/2024/PXL_20240911_034944575-small.jpeg",
+                "/photos/2024/PXL_20240911_034944575-large.jpeg",
+                "/photos/2024/PXL_20240911_034944575-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-11T12:49:44+09:00",
+            "GPSLocation": {
+                "Latitude": "35.3124333333333",
+                "Longitude": "139.533794444444"
+            }
+        },
+        "location": "Kamakura, Japan",
+        "description": "I took this at the Hasedera Buddhist temple in Kamakura.  Hasedera (長谷寺) is a temple of the Jodo sect, famous for its eleven-headed statue of Kannon, the goddess of mercy."
     }
 ]
