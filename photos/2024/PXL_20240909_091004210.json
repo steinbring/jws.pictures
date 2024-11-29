@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240909_091004210",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240909_091004210-medium.jpeg",
+            "/photos/2024/PXL_20240909_091004210-small.webp",
+            "/photos/2024/PXL_20240909_091004210-small.jpeg",
+            "/photos/2024/PXL_20240909_091004210-medium.webp",
+            "/photos/2024/PXL_20240909_091004210-large.jpeg",
+            "/photos/2024/PXL_20240909_091004210-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-09T18:10:04+09:00",
+        "GPSLocation": {
+            "Latitude": "35.6958888888889",
+            "Longitude": "139.797805555556"
+        }
+    },
+    "location": "Sumida City, Tokyo, Japan",
+    "description": "After attending the Tokyo Grand Sumo Tournament, we went to Hana no Mai Restaurant to eat the type of dinner that sumo wrestlers eat.  It was a lot of food."
+}

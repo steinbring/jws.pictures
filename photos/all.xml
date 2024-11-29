@@ -1029,4 +1029,25 @@
     <location>Kamakura, Japan</location>
     <description>I took this at the Hasedera Buddhist temple in Kamakura.  Hasedera (長谷寺) is a temple of the Jodo sect, famous for its eleven-headed statue of Kannon, the goddess of mercy.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240909_091004210</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240909_091004210-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_091004210-small.webp</filename>
+      <filename>/photos/2024/PXL_20240909_091004210-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_091004210-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240909_091004210-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_091004210-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-09T18:10:04+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>35.6958888888889</Latitude>
+        <Longitude>139.797805555556</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Sumida City, Tokyo, Japan</location>
+    <description>After attending the Tokyo Grand Sumo Tournament, we went to Hana no Mai Restaurant to eat the type of dinner that sumo wrestlers eat.  It was a lot of food.</description>
+  </metadata>
 </items>
