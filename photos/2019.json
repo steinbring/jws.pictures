@@ -21,5 +21,28 @@
         },
         "location": "Chefchaouen, Morocco",
         "description": "I took this in the fall of 2019.  We stayed in the port city of Tangier and took a day trip into the mountains.  I remember loving this lunch."
+    },
+    {
+        "ID": "MVIMG_20191106_104928",
+        "filenames": {
+            "filename": [
+                "/photos/2019/MVIMG_20191106_104928-medium.jpeg",
+                "/photos/2019/MVIMG_20191106_104928-small.webp",
+                "/photos/2019/MVIMG_20191106_104928-medium.webp",
+                "/photos/2019/MVIMG_20191106_104928-small.jpeg",
+                "/photos/2019/MVIMG_20191106_104928-large.jpeg",
+                "/photos/2019/MVIMG_20191106_104928-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 3",
+            "DateTime": "2019-11-06T09:49:28Z",
+            "GPSLocation": {
+                "Latitude": "35.1700333333333",
+                "Longitude": "-5.26275"
+            }
+        },
+        "location": "Chefchaouen, Morocco",
+        "description": "I took this while being guided through Chefchaouen.  I have never seen oranges look so good."
     }
 ]
