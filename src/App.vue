@@ -101,7 +101,7 @@ header {
 
 /* Adjust the logo size and remove heading margins */
 .logo-container img {
-  height: 60px;
+  height: 120px;
   margin-right: 0;
 }
 
