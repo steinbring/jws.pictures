@@ -1,0 +1,20 @@
+{
+    "ID": "2019_1103_15292700",
+    "filenames": {
+        "filename": [
+            "/photos/2019/2019_1103_15292700-medium.jpeg",
+            "/photos/2019/2019_1103_15292700-small.webp",
+            "/photos/2019/2019_1103_15292700-medium.webp",
+            "/photos/2019/2019_1103_15292700-small.jpeg",
+            "/photos/2019/2019_1103_15292700-large.jpeg",
+            "/photos/2019/2019_1103_15292700-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "FUJIFILM X-A3",
+        "DateTime": "2019-11-03T09:59:16-06:00",
+        "GPSLocation": ""
+    },
+    "location": "Paris, France",
+    "description": "I took this on the Pont d'Iéna in 2019, on my way to the Tour Eiffel."
+}

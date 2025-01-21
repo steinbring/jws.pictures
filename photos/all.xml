@@ -1092,4 +1092,22 @@
     <location>Chefchaouen, Morocco</location>
     <description>I took this while being guided through Chefchaouen.  I have never seen oranges look so good.</description>
   </metadata>
+  <metadata>
+    <ID>2019_1103_15292700</ID>
+    <filenames>
+      <filename>/photos/2019/2019_1103_15292700-medium.jpeg</filename>
+      <filename>/photos/2019/2019_1103_15292700-small.webp</filename>
+      <filename>/photos/2019/2019_1103_15292700-medium.webp</filename>
+      <filename>/photos/2019/2019_1103_15292700-small.jpeg</filename>
+      <filename>/photos/2019/2019_1103_15292700-large.jpeg</filename>
+      <filename>/photos/2019/2019_1103_15292700-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>FUJIFILM X-A3</Camera>
+      <DateTime>2019-11-03T09:59:16-06:00</DateTime>
+      <GPSLocation/>
+    </exif>
+    <location>Paris, France</location>
+    <description>I took this on the Pont d'Iéna in 2019, on my way to the Tour Eiffel.</description>
+  </metadata>
 </items>
