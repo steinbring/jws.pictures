@@ -966,4 +966,25 @@
     <location>Sumida City, Tokyo, Japan</location>
     <description>After attending the Tokyo Grand Sumo Tournament, we went to Hana no Mai Restaurant to eat the type of dinner that sumo wrestlers eat.  It was a lot of food.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240909_002758432</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240909_002758432-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_002758432-small.webp</filename>
+      <filename>/photos/2024/PXL_20240909_002758432-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_002758432-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240909_002758432-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240909_002758432-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-09T09:27:58+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>35.6694861111111</Latitude>
+        <Longitude>139.702130555556</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Shibuya, Tokyo, Japan</location>
+    <description>This is the Meiji Jingu Ichino Torii at the Meiji Jingu Shinto shrine.  It was ridiculously hot outside when I was there.</description>
+  </metadata>
 </items>

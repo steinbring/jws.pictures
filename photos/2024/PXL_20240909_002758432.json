@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240909_002758432",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240909_002758432-medium.jpeg",
+            "/photos/2024/PXL_20240909_002758432-small.webp",
+            "/photos/2024/PXL_20240909_002758432-small.jpeg",
+            "/photos/2024/PXL_20240909_002758432-medium.webp",
+            "/photos/2024/PXL_20240909_002758432-large.jpeg",
+            "/photos/2024/PXL_20240909_002758432-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-09T09:27:58+09:00",
+        "GPSLocation": {
+            "Latitude": "35.6694861111111",
+            "Longitude": "139.702130555556"
+        }
+    },
+    "location": "Shibuya, Tokyo, Japan",
+    "description": "This is the Meiji Jingu Ichino Torii at the Meiji Jingu Shinto shrine.  It was ridiculously hot outside when I was there."
+}
