@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<items>
+  <metadata>
+    <ID>PXL_20220918_115850628.MP</ID>
+    <filenames>
+      <filename>/photos/2022/PXL_20220918_115850628.MP-medium.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_115850628.MP-small.webp</filename>
+      <filename>/photos/2022/PXL_20220918_115850628.MP-small.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_115850628.MP-medium.webp</filename>
+      <filename>/photos/2022/PXL_20220918_115850628.MP-large.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_115850628.MP-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 6a</Camera>
+      <DateTime>2022-09-18T17:43:50+05:45</DateTime>
+      <GPSLocation>
+        <Latitude>27.7049444444444</Latitude>
+        <Longitude>85.30725</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Kathmandu, Nepal</location>
+    <description>I took this image at Shree Kaal Bhairav Temple while visiting Durbar Square in Kathmandu.</description>
+  </metadata>
+</items>

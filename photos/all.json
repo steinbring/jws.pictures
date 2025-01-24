@@ -1283,5 +1283,28 @@
         },
         "location": "Kyoto, Japan",
         "description": "I took this late in the day in the Arashiyama Bamboo Forest in Kyoto."
+    },
+    {
+        "ID": "PXL_20220918_115850628.MP",
+        "filenames": {
+            "filename": [
+                "/photos/2022/PXL_20220918_115850628.MP-medium.jpeg",
+                "/photos/2022/PXL_20220918_115850628.MP-small.webp",
+                "/photos/2022/PXL_20220918_115850628.MP-small.jpeg",
+                "/photos/2022/PXL_20220918_115850628.MP-medium.webp",
+                "/photos/2022/PXL_20220918_115850628.MP-large.jpeg",
+                "/photos/2022/PXL_20220918_115850628.MP-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 6a",
+            "DateTime": "2022-09-18T17:43:50+05:45",
+            "GPSLocation": {
+                "Latitude": "27.7049444444444",
+                "Longitude": "85.30725"
+            }
+        },
+        "location": "Kathmandu, Nepal",
+        "description": "I took this image at Shree Kaal Bhairav Temple while visiting Durbar Square in Kathmandu."
     }
 ]
