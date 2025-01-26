@@ -1125,5 +1125,28 @@
         },
         "location": "Kyoto, Japan",
         "description": "I took this late in the day in the Arashiyama Bamboo Forest in Kyoto."
+    },
+    {
+        "ID": "PXL_20240914_053909205.MP",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240914_053909205.MP-medium.jpeg",
+                "/photos/2024/PXL_20240914_053909205.MP-small.webp",
+                "/photos/2024/PXL_20240914_053909205.MP-small.jpeg",
+                "/photos/2024/PXL_20240914_053909205.MP-medium.webp",
+                "/photos/2024/PXL_20240914_053909205.MP-large.jpeg",
+                "/photos/2024/PXL_20240914_053909205.MP-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-14T14:39:09+09:00",
+            "GPSLocation": {
+                "Latitude": "34.6808861111111",
+                "Longitude": "135.848544444444"
+            }
+        },
+        "location": "Nara, Japan",
+        "description": "I took this outside of the Kasugataisha Shrine in the Mt. Kasuga Primeval Forest."
     }
 ]

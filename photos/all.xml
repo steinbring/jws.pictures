@@ -1194,4 +1194,25 @@
     <location>Kathmandu, Nepal</location>
     <description>I took this image at Shree Kaal Bhairav Temple while visiting Durbar Square in Kathmandu.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240914_053909205.MP</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240914_053909205.MP-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240914_053909205.MP-small.webp</filename>
+      <filename>/photos/2024/PXL_20240914_053909205.MP-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240914_053909205.MP-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240914_053909205.MP-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240914_053909205.MP-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-14T14:39:09+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>34.6808861111111</Latitude>
+        <Longitude>135.848544444444</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Nara, Japan</location>
+    <description>I took this outside of the Kasugataisha Shrine in the Mt. Kasuga Primeval Forest.</description>
+  </metadata>
 </items>
