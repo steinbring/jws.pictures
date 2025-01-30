@@ -1092,4 +1092,25 @@
     <location>Taipei, Taiwan</location>
     <description>I took this at Lungshan Temple in Taipei. The temple was built in 1740 during the Qing Dynasty.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240921_025728249</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240921_025728249-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_025728249-small.webp</filename>
+      <filename>/photos/2024/PXL_20240921_025728249-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_025728249-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240921_025728249-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_025728249-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-21T11:57:28+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>37.5663972222222</Latitude>
+        <Longitude>126.976041666667</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Seoul, South Korea</location>
+    <description>I captured this at Deoksugung Palace on my last day in Seoul. It had been raining quite a bit, but the weather cleared up enough for me to explore it.</description>
+  </metadata>
 </items>
