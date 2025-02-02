@@ -1398,5 +1398,28 @@
         },
         "location": "Seoul, South Korea",
         "description": "I captured this at Deoksugung Palace on my last day in Seoul. It had been raining quite a bit, but the weather cleared up enough for me to explore it."
+    },
+    {
+        "ID": "PXL_20220918_104155771",
+        "filenames": {
+            "filename": [
+                "/photos/2022/PXL_20220918_104155771-medium.jpeg",
+                "/photos/2022/PXL_20220918_104155771-small.webp",
+                "/photos/2022/PXL_20220918_104155771-small.jpeg",
+                "/photos/2022/PXL_20220918_104155771-medium.webp",
+                "/photos/2022/PXL_20220918_104155771-large.jpeg",
+                "/photos/2022/PXL_20220918_104155771-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 6a",
+            "DateTime": "2022-09-18T16:26:55+05:45",
+            "GPSLocation": {
+                "Latitude": "27.7153055555556",
+                "Longitude": "85.2902194444444"
+            }
+        },
+        "location": "Kathmandu, Nepal",
+        "description": "I took this at Swayambhu Mahachaitya (also called the \"Monkey Temple\") in Kathmandu. Believed to date back to 460 A.D., it was built by King Manadeva, and by the 13th century, it had become an important center of Buddhism."
     }
 ]
