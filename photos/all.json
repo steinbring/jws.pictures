@@ -1421,5 +1421,28 @@
         },
         "location": "Kathmandu, Nepal",
         "description": "I took this at Swayambhu Mahachaitya (also called the \"Monkey Temple\") in Kathmandu. Believed to date back to 460 A.D., it was built by King Manadeva, and by the 13th century, it had become an important center of Buddhism."
+    },
+    {
+        "ID": "PXL_20230506_145118047",
+        "filenames": {
+            "filename": [
+                "/photos/2023/PXL_20230506_145118047-medium.jpeg",
+                "/photos/2023/PXL_20230506_145118047-small.webp",
+                "/photos/2023/PXL_20230506_145118047-small.jpeg",
+                "/photos/2023/PXL_20230506_145118047-medium.webp",
+                "/photos/2023/PXL_20230506_145118047-large.jpeg",
+                "/photos/2023/PXL_20230506_145118047-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 6a",
+            "DateTime": "2023-05-06T15:51:18+01:00",
+            "GPSLocation": {
+                "Latitude": "52.5648361111111",
+                "Longitude": "-8.78935"
+            }
+        },
+        "location": "Adare, County Limerick, Ireland",
+        "description": "This is the Trinitarian Abbey in Adare. The foundation date of the Trinitarian order at Adare is unknown. I was in Adare very briefly in 2023."
     }
 ]
