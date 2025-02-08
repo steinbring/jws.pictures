@@ -1444,5 +1444,28 @@
         },
         "location": "Adare, County Limerick, Ireland",
         "description": "This is the Trinitarian Abbey in Adare. The foundation date of the Trinitarian order at Adare is unknown. I was in Adare very briefly in 2023."
+    },
+    {
+        "ID": "PXL_20240921_022713121.MP",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240921_022713121.MP-medium.jpeg",
+                "/photos/2024/PXL_20240921_022713121.MP-small.webp",
+                "/photos/2024/PXL_20240921_022713121.MP-small.jpeg",
+                "/photos/2024/PXL_20240921_022713121.MP-medium.webp",
+                "/photos/2024/PXL_20240921_022713121.MP-large.jpeg",
+                "/photos/2024/PXL_20240921_022713121.MP-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-21T11:27:13+09:00",
+            "GPSLocation": {
+                "Latitude": "37.5646055555556",
+                "Longitude": "126.974863888889"
+            }
+        },
+        "location": "Seoul, South Korea",
+        "description": "I took this photo last year at Deoksu Palace in Seoul."
     }
 ]

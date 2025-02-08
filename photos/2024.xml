@@ -1113,4 +1113,25 @@
     <location>Seoul, South Korea</location>
     <description>I captured this at Deoksugung Palace on my last day in Seoul. It had been raining quite a bit, but the weather cleared up enough for me to explore it.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240921_022713121.MP</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240921_022713121.MP-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_022713121.MP-small.webp</filename>
+      <filename>/photos/2024/PXL_20240921_022713121.MP-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_022713121.MP-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240921_022713121.MP-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240921_022713121.MP-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-21T11:27:13+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>37.5646055555556</Latitude>
+        <Longitude>126.974863888889</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Seoul, South Korea</location>
+    <description>I took this photo last year at Deoksu Palace in Seoul.</description>
+  </metadata>
 </items>
