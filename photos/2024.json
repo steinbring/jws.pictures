@@ -1240,5 +1240,25 @@
         },
         "location": "Seoul, South Korea",
         "description": "I took this photo last year at Deoksu Palace in Seoul."
+    },
+    {
+        "ID": "PXL_20240911_063123678",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240911_063123678-medium.jpeg",
+                "/photos/2024/PXL_20240911_063123678-small.webp",
+                "/photos/2024/PXL_20240911_063123678-small.jpeg",
+                "/photos/2024/PXL_20240911_063123678-medium.webp",
+                "/photos/2024/PXL_20240911_063123678-large.jpeg",
+                "/photos/2024/PXL_20240911_063123678-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "",
+            "DateTime": "2024-09-11T15:31:23+09:00",
+            "GPSLocation": ""
+        },
+        "location": "Fujisawa, Kanagawa, Japan",
+        "description": "I took this photo on Enoshima Island in Japan. As I was making my way down from the Enoshima Sea Candle, I thought that it might be my dream home."
     }
 ]
