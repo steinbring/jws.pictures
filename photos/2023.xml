@@ -21,4 +21,25 @@
     <location>Adare, County Limerick, Ireland</location>
     <description>This is the Trinitarian Abbey in Adare. The foundation date of the Trinitarian order at Adare is unknown. I was in Adare very briefly in 2023.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20230506_102302529</ID>
+    <filenames>
+      <filename>/photos/2023/PXL_20230506_102302529-medium.jpeg</filename>
+      <filename>/photos/2023/PXL_20230506_102302529-small.webp</filename>
+      <filename>/photos/2023/PXL_20230506_102302529-small.jpeg</filename>
+      <filename>/photos/2023/PXL_20230506_102302529-medium.webp</filename>
+      <filename>/photos/2023/PXL_20230506_102302529-large.jpeg</filename>
+      <filename>/photos/2023/PXL_20230506_102302529-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 6a</Camera>
+      <DateTime>2023-05-06T11:23:02+01:00</DateTime>
+      <GPSLocation>
+        <Latitude>51.9647861111111</Latitude>
+        <Longitude>-9.58023055555556</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>County Kerry, Ireland</location>
+    <description>I visited the Ring of Kerry in 2023 and took this photo of a neat old church.</description>
+  </metadata>
 </items>

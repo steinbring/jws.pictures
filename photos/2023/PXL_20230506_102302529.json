@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20230506_102302529",
+    "filenames": {
+        "filename": [
+            "/photos/2023/PXL_20230506_102302529-medium.jpeg",
+            "/photos/2023/PXL_20230506_102302529-small.webp",
+            "/photos/2023/PXL_20230506_102302529-small.jpeg",
+            "/photos/2023/PXL_20230506_102302529-medium.webp",
+            "/photos/2023/PXL_20230506_102302529-large.jpeg",
+            "/photos/2023/PXL_20230506_102302529-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 6a",
+        "DateTime": "2023-05-06T11:23:02+01:00",
+        "GPSLocation": {
+            "Latitude": "51.9647861111111",
+            "Longitude": "-9.58023055555556"
+        }
+    },
+    "location": "County Kerry, Ireland",
+    "description": "I visited the Ring of Kerry in 2023 and took this photo of a neat old church."
+}
