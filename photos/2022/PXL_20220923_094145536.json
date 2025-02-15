@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20220923_094145536",
+    "filenames": {
+        "filename": [
+            "/photos/2022/PXL_20220923_094145536-medium.jpeg",
+            "/photos/2022/PXL_20220923_094145536-small.webp",
+            "/photos/2022/PXL_20220923_094145536-small.jpeg",
+            "/photos/2022/PXL_20220923_094145536-medium.webp",
+            "/photos/2022/PXL_20220923_094145536-large.jpeg",
+            "/photos/2022/PXL_20220923_094145536-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 6a",
+        "DateTime": "2022-09-23T15:11:45+05:30",
+        "GPSLocation": {
+            "Latitude": "28.593",
+            "Longitude": "77.2460944444444"
+        }
+    },
+    "location": "New Delhi, Delhi, India",
+    "description": "I captured this image at the tomb of the noble Isa Khan Niazi, located within the Humayun's Tomb complex in Delhi, India. I visited here in 2022."
+}
