@@ -84,4 +84,25 @@
     <location>New Delhi, Delhi, India</location>
     <description>I captured this image at the tomb of the noble Isa Khan Niazi, located within the Humayun's Tomb complex in Delhi, India. I visited here in 2022.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20220329_122940042</ID>
+    <filenames>
+      <filename>/photos/2022/PXL_20220329_122940042-medium.jpeg</filename>
+      <filename>/photos/2022/PXL_20220329_122940042-small.webp</filename>
+      <filename>/photos/2022/PXL_20220329_122940042-small.jpeg</filename>
+      <filename>/photos/2022/PXL_20220329_122940042-medium.webp</filename>
+      <filename>/photos/2022/PXL_20220329_122940042-large.jpeg</filename>
+      <filename>/photos/2022/PXL_20220329_122940042-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 4a (5G)</Camera>
+      <DateTime>2022-03-29T14:29:40+02:00</DateTime>
+      <GPSLocation>
+        <Latitude>45.4343638888889</Latitude>
+        <Longitude>12.339375</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Venice, Italy</location>
+    <description>I took this at Saint Mark's Basilica (Basilica di San Marco) in Venice. Originally, this building was intended as an extension of the Doge’s Palace; however, the construction of the Basilica of St. Mark, which began in 828 and concluded in 832, was undertaken to house the body of St. Mark the Apostle, who was brought from Alexandria and named protector of the city.</description>
+  </metadata>
 </items>
