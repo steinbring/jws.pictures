@@ -1443,4 +1443,25 @@
     <location>Venice, Italy</location>
     <description>I took this at Saint Mark's Basilica (Basilica di San Marco) in Venice. Originally, this building was intended as an extension of the Doge’s Palace; however, the construction of the Basilica of St. Mark, which began in 828 and concluded in 832, was undertaken to house the body of St. Mark the Apostle, who was brought from Alexandria and named protector of the city.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20230503_132453386</ID>
+    <filenames>
+      <filename>/photos/2023/PXL_20230503_132453386-medium.jpeg</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-small.webp</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-small.jpeg</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-medium.webp</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-large.jpeg</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 6a</Camera>
+      <DateTime>2023-05-03T14:24:53+01:00</DateTime>
+      <GPSLocation>
+        <Latitude>53.3398666666667</Latitude>
+        <Longitude>-6.27829444444444</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Dublin, Ireland</location>
+    <description>This is Marrowbone Books in Dublin.</description>
+  </metadata>
 </items>

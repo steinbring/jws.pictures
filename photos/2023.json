@@ -44,5 +44,28 @@
         },
         "location": "County Kerry, Ireland",
         "description": "I visited the Ring of Kerry in 2023 and took this photo of a neat old church."
+    },
+    {
+        "ID": "PXL_20230503_132453386",
+        "filenames": {
+            "filename": [
+                "/photos/2023/PXL_20230503_132453386-medium.jpeg",
+                "/photos/2023/PXL_20230503_132453386-small.webp",
+                "/photos/2023/PXL_20230503_132453386-small.jpeg",
+                "/photos/2023/PXL_20230503_132453386-medium.webp",
+                "/photos/2023/PXL_20230503_132453386-large.jpeg",
+                "/photos/2023/PXL_20230503_132453386-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 6a",
+            "DateTime": "2023-05-03T14:24:53+01:00",
+            "GPSLocation": {
+                "Latitude": "53.3398666666667",
+                "Longitude": "-6.27829444444444"
+            }
+        },
+        "location": "Dublin, Ireland",
+        "description": "This is Marrowbone Books in Dublin."
     }
 ]

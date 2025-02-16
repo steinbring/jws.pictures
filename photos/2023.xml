@@ -42,4 +42,25 @@
     <location>County Kerry, Ireland</location>
     <description>I visited the Ring of Kerry in 2023 and took this photo of a neat old church.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20230503_132453386</ID>
+    <filenames>
+      <filename>/photos/2023/PXL_20230503_132453386-medium.jpeg</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-small.webp</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-small.jpeg</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-medium.webp</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-large.jpeg</filename>
+      <filename>/photos/2023/PXL_20230503_132453386-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 6a</Camera>
+      <DateTime>2023-05-03T14:24:53+01:00</DateTime>
+      <GPSLocation>
+        <Latitude>53.3398666666667</Latitude>
+        <Longitude>-6.27829444444444</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Dublin, Ireland</location>
+    <description>This is Marrowbone Books in Dublin.</description>
+  </metadata>
 </items>
