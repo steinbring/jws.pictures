@@ -1485,4 +1485,25 @@
     <location>Taipei, Taiwan</location>
     <description>I didn't get to see much of Taiwan. I was only there for a day, and it rained heavily. I hope to return there someday.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20220918_012328620</ID>
+    <filenames>
+      <filename>/photos/2022/PXL_20220918_012328620-medium.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_012328620-small.webp</filename>
+      <filename>/photos/2022/PXL_20220918_012328620-medium.webp</filename>
+      <filename>/photos/2022/PXL_20220918_012328620-small.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_012328620-large.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_012328620-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 6a</Camera>
+      <DateTime>2022-09-18T07:08:28+05:45</DateTime>
+      <GPSLocation>
+        <Latitude>27.5485194444444</Latitude>
+        <Longitude>86.6072055555556</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Nepal</location>
+    <description>When I was in Kathmandu, I had the choice to either fly in a fixed-wing aircraft around Everest or take a helicopter to Everest Base Camp. I chose the flight around Everest because it was significantly cheaper and felt safer. I took this picture from the window.</description>
+  </metadata>
 </items>

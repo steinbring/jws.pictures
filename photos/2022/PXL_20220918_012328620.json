@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20220918_012328620",
+    "filenames": {
+        "filename": [
+            "/photos/2022/PXL_20220918_012328620-medium.jpeg",
+            "/photos/2022/PXL_20220918_012328620-small.webp",
+            "/photos/2022/PXL_20220918_012328620-medium.webp",
+            "/photos/2022/PXL_20220918_012328620-small.jpeg",
+            "/photos/2022/PXL_20220918_012328620-large.jpeg",
+            "/photos/2022/PXL_20220918_012328620-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 6a",
+        "DateTime": "2022-09-18T07:08:28+05:45",
+        "GPSLocation": {
+            "Latitude": "27.5485194444444",
+            "Longitude": "86.6072055555556"
+        }
+    },
+    "location": "Nepal",
+    "description": "When I was in Kathmandu, I had the choice to either fly in a fixed-wing aircraft around Everest or take a helicopter to Everest Base Camp. I chose the flight around Everest because it was significantly cheaper and felt safer. I took this picture from the window."
+}
