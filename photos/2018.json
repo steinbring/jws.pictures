@@ -90,5 +90,28 @@
         },
         "location": "Jiaxing, Zhejiang, China",
         "description": "This is fast food in Jiaxing.  I took this at a truck stop in Xiuzhou District."
+    },
+    {
+        "ID": "IMG_20181106_133929",
+        "filenames": {
+            "filename": [
+                "/photos/2018/IMG_20181106_133929-medium.jpeg",
+                "/photos/2018/IMG_20181106_133929-small.webp",
+                "/photos/2018/IMG_20181106_133929-small.jpeg",
+                "/photos/2018/IMG_20181106_133929-medium.webp",
+                "/photos/2018/IMG_20181106_133929-large.jpeg",
+                "/photos/2018/IMG_20181106_133929-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 2",
+            "DateTime": "2018-11-06T13:39:29+08:00",
+            "GPSLocation": {
+                "Latitude": "31.3227666666667",
+                "Longitude": "120.594502777778"
+            }
+        },
+        "location": "Suzhou, Jiangsu, China",
+        "description": "Picking up some meat at the market in Suzhou"
     }
 ]

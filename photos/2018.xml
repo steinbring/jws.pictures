@@ -84,4 +84,25 @@
     <location>Jiaxing, Zhejiang, China</location>
     <description>This is fast food in Jiaxing.  I took this at a truck stop in Xiuzhou District.</description>
   </metadata>
+  <metadata>
+    <ID>IMG_20181106_133929</ID>
+    <filenames>
+      <filename>/photos/2018/IMG_20181106_133929-medium.jpeg</filename>
+      <filename>/photos/2018/IMG_20181106_133929-small.webp</filename>
+      <filename>/photos/2018/IMG_20181106_133929-small.jpeg</filename>
+      <filename>/photos/2018/IMG_20181106_133929-medium.webp</filename>
+      <filename>/photos/2018/IMG_20181106_133929-large.jpeg</filename>
+      <filename>/photos/2018/IMG_20181106_133929-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 2</Camera>
+      <DateTime>2018-11-06T13:39:29+08:00</DateTime>
+      <GPSLocation>
+        <Latitude>31.3227666666667</Latitude>
+        <Longitude>120.594502777778</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Suzhou, Jiangsu, China</location>
+    <description>Picking up some meat at the market in Suzhou</description>
+  </metadata>
 </items>
