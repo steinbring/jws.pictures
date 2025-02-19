@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20220915_120733752",
+    "filenames": {
+        "filename": [
+            "/photos/2022/PXL_20220915_120733752-medium.jpeg",
+            "/photos/2022/PXL_20220915_120733752-small.webp",
+            "/photos/2022/PXL_20220915_120733752-small.jpeg",
+            "/photos/2022/PXL_20220915_120733752-medium.webp",
+            "/photos/2022/PXL_20220915_120733752-large.jpeg",
+            "/photos/2022/PXL_20220915_120733752-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 6a",
+        "DateTime": "2022-09-15T17:37:33+05:30",
+        "GPSLocation": {
+            "Latitude": "28.6496972222222",
+            "Longitude": "77.1900388888889"
+        }
+    },
+    "location": "Delhi, India",
+    "description": "A quick visit to the market in Delhi"
+}

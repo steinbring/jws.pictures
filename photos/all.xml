@@ -1527,4 +1527,25 @@
     <location>Suzhou, Jiangsu, China</location>
     <description>Picking up some meat at the market in Suzhou</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20220915_120733752</ID>
+    <filenames>
+      <filename>/photos/2022/PXL_20220915_120733752-medium.jpeg</filename>
+      <filename>/photos/2022/PXL_20220915_120733752-small.webp</filename>
+      <filename>/photos/2022/PXL_20220915_120733752-small.jpeg</filename>
+      <filename>/photos/2022/PXL_20220915_120733752-medium.webp</filename>
+      <filename>/photos/2022/PXL_20220915_120733752-large.jpeg</filename>
+      <filename>/photos/2022/PXL_20220915_120733752-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 6a</Camera>
+      <DateTime>2022-09-15T17:37:33+05:30</DateTime>
+      <GPSLocation>
+        <Latitude>28.6496972222222</Latitude>
+        <Longitude>77.1900388888889</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Delhi, India</location>
+    <description>A quick visit to the market in Delhi</description>
+  </metadata>
 </items>
