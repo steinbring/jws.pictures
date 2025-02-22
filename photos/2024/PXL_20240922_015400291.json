@@ -1,0 +1,23 @@
+{
+    "ID": "PXL_20240922_015400291",
+    "filenames": {
+        "filename": [
+            "/photos/2024/PXL_20240922_015400291-medium.jpeg",
+            "/photos/2024/PXL_20240922_015400291-small.webp",
+            "/photos/2024/PXL_20240922_015400291-small.jpeg",
+            "/photos/2024/PXL_20240922_015400291-medium.webp",
+            "/photos/2024/PXL_20240922_015400291-large.jpeg",
+            "/photos/2024/PXL_20240922_015400291-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 7a",
+        "DateTime": "2024-09-22T09:54:00+08:00",
+        "GPSLocation": {
+            "Latitude": "25.0361444444444",
+            "Longitude": "121.522613888889"
+        }
+    },
+    "location": "Taipei, Taiwan",
+    "description": "I took this on my brief trip to Taipei"
+}

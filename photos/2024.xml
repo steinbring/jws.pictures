@@ -1173,4 +1173,25 @@
     <location>Taipei, Taiwan</location>
     <description>I didn't get to see much of Taiwan. I was only there for a day, and it rained heavily. I hope to return there someday.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240922_015400291</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240922_015400291-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240922_015400291-small.webp</filename>
+      <filename>/photos/2024/PXL_20240922_015400291-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240922_015400291-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240922_015400291-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240922_015400291-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-22T09:54:00+08:00</DateTime>
+      <GPSLocation>
+        <Latitude>25.0361444444444</Latitude>
+        <Longitude>121.522613888889</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Taipei, Taiwan</location>
+    <description>I took this on my brief trip to Taipei</description>
+  </metadata>
 </items>
