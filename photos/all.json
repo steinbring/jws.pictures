@@ -1717,5 +1717,28 @@
         },
         "location": "Taipei, Taiwan",
         "description": "I took this on my brief trip to Taipei"
+    },
+    {
+        "ID": "PXL_20220918_102540352",
+        "filenames": {
+            "filename": [
+                "/photos/2022/PXL_20220918_102540352-medium.jpeg",
+                "/photos/2022/PXL_20220918_102540352-small.webp",
+                "/photos/2022/PXL_20220918_102540352-small.jpeg",
+                "/photos/2022/PXL_20220918_102540352-medium.webp",
+                "/photos/2022/PXL_20220918_102540352-large.jpeg",
+                "/photos/2022/PXL_20220918_102540352-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 6a",
+            "DateTime": "2022-09-18T16:10:40+05:45",
+            "GPSLocation": {
+                "Latitude": "27.7149527777778",
+                "Longitude": "85.2906138888889"
+            }
+        },
+        "location": "Kathmandu, Nepal",
+        "description": "This stupa has been the background on my phone since I got home in 2022."
     }
 ]

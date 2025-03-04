@@ -147,4 +147,25 @@
     <location>Delhi, India</location>
     <description>A quick visit to the market in Delhi</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20220918_102540352</ID>
+    <filenames>
+      <filename>/photos/2022/PXL_20220918_102540352-medium.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_102540352-small.webp</filename>
+      <filename>/photos/2022/PXL_20220918_102540352-small.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_102540352-medium.webp</filename>
+      <filename>/photos/2022/PXL_20220918_102540352-large.jpeg</filename>
+      <filename>/photos/2022/PXL_20220918_102540352-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 6a</Camera>
+      <DateTime>2022-09-18T16:10:40+05:45</DateTime>
+      <GPSLocation>
+        <Latitude>27.7149527777778</Latitude>
+        <Longitude>85.2906138888889</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Kathmandu, Nepal</location>
+    <description>This stupa has been the background on my phone since I got home in 2022.</description>
+  </metadata>
 </items>
