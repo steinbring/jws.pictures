@@ -1740,5 +1740,28 @@
         },
         "location": "Kathmandu, Nepal",
         "description": "This stupa has been the background on my phone since I got home in 2022."
+    },
+    {
+        "ID": "PXL_20220917_095758944",
+        "filenames": {
+            "filename": [
+                "/photos/2022/PXL_20220917_095758944-medium.jpeg",
+                "/photos/2022/PXL_20220917_095758944-small.webp",
+                "/photos/2022/PXL_20220917_095758944-small.jpeg",
+                "/photos/2022/PXL_20220917_095758944-medium.webp",
+                "/photos/2022/PXL_20220917_095758944-large.jpeg",
+                "/photos/2022/PXL_20220917_095758944-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 6a",
+            "DateTime": "2022-09-17T15:42:58+05:45",
+            "GPSLocation": {
+                "Latitude": "27.6722055555556",
+                "Longitude": "85.4284638888889"
+            }
+        },
+        "location": "Bhaktapur, Nepal",
+        "description": "I captured this in Nepal in 2022. You'll see a building on the left side of the image featuring wooden beams supporting the wall. That structure is a result of the 2015 earthquake. Several buildings were merely piles of bricks awaiting reconstruction."
     }
 ]
