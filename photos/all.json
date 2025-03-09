@@ -1786,5 +1786,28 @@
         },
         "location": "South of Japan",
         "description": "I took this on the overnight ferry between Osaka and Busan."
+    },
+    {
+        "ID": "PXL_20240915_040251307",
+        "filenames": {
+            "filename": [
+                "/photos/2024/PXL_20240915_040251307-medium.jpeg",
+                "/photos/2024/PXL_20240915_040251307-small.webp",
+                "/photos/2024/PXL_20240915_040251307-small.jpeg",
+                "/photos/2024/PXL_20240915_040251307-medium.webp",
+                "/photos/2024/PXL_20240915_040251307-large.jpeg",
+                "/photos/2024/PXL_20240915_040251307-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 7a",
+            "DateTime": "2024-09-15T13:02:51+09:00",
+            "GPSLocation": {
+                "Latitude": "34.9948166666667",
+                "Longitude": "135.783697222222"
+            }
+        },
+        "location": "Kyoto, Japan",
+        "description": "I captured this at Kiyomizudera Temple in Kyoto. It was established in 780 on the site of the Otowa Waterfall in the wooded hills east of Kyoto and takes its name from the waterfall's waters. The temple was originally associated with the Hosso sect, one of the oldest schools of Japanese Buddhism, but created its own Kita Hosso sect in 1965."
     }
 ]
