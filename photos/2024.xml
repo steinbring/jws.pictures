@@ -1194,4 +1194,25 @@
     <location>Taipei, Taiwan</location>
     <description>I took this on my brief trip to Taipei</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240916_090815579</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240916_090815579-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240916_090815579-small.webp</filename>
+      <filename>/photos/2024/PXL_20240916_090815579-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240916_090815579-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240916_090815579-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240916_090815579-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-16T18:08:15+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>34.4032638888889</Latitude>
+        <Longitude>134.223505555556</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>South of Japan</location>
+    <description>I took this on the overnight ferry between Osaka and Busan.</description>
+  </metadata>
 </items>
