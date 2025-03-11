@@ -1236,4 +1236,25 @@
     <location>Kyoto, Japan</location>
     <description>I captured this at Kiyomizudera Temple in Kyoto. It was established in 780 on the site of the Otowa Waterfall in the wooded hills east of Kyoto and takes its name from the waterfall's waters. The temple was originally associated with the Hosso sect, one of the oldest schools of Japanese Buddhism, but created its own Kita Hosso sect in 1965.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20240915_011021832</ID>
+    <filenames>
+      <filename>/photos/2024/PXL_20240915_011021832-medium.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_011021832-medium.webp</filename>
+      <filename>/photos/2024/PXL_20240915_011021832-small.webp</filename>
+      <filename>/photos/2024/PXL_20240915_011021832-small.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_011021832-large.jpeg</filename>
+      <filename>/photos/2024/PXL_20240915_011021832-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 7a</Camera>
+      <DateTime>2024-09-15T10:10:21+09:00</DateTime>
+      <GPSLocation>
+        <Latitude>34.9683944444444</Latitude>
+        <Longitude>135.768452777778</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Kyoto, Japan</location>
+    <description>My kingdom for an Onigiri or a Lawson egg salad sando.</description>
+  </metadata>
 </items>
