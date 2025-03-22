@@ -113,5 +113,28 @@
         },
         "location": "Suzhou, Jiangsu, China",
         "description": "Picking up some meat at the market in Suzhou"
+    },
+    {
+        "ID": "IMG_20181103_142916",
+        "filenames": {
+            "filename": [
+                "/photos/2018/IMG_20181103_142916-medium.jpeg",
+                "/photos/2018/IMG_20181103_142916-small.webp",
+                "/photos/2018/IMG_20181103_142916-small.jpeg",
+                "/photos/2018/IMG_20181103_142916-medium.webp",
+                "/photos/2018/IMG_20181103_142916-large.jpeg",
+                "/photos/2018/IMG_20181103_142916-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 2",
+            "DateTime": "2018-11-03T14:29:16+08:00",
+            "GPSLocation": {
+                "Latitude": "39.9145777777778",
+                "Longitude": "116.391611111111"
+            }
+        },
+        "location": "Beijing, China",
+        "description": "I took this in the Forbidden City."
     }
 ]
