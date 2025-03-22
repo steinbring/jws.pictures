@@ -1855,5 +1855,28 @@
         },
         "location": "Beijing, China",
         "description": "I took this in the Forbidden City."
+    },
+    {
+        "ID": "MVIMG_20181103_153956",
+        "filenames": {
+            "filename": [
+                "/photos/2018/MVIMG_20181103_153956-medium.jpeg",
+                "/photos/2018/MVIMG_20181103_153956-small.webp",
+                "/photos/2018/MVIMG_20181103_153956-small.jpeg",
+                "/photos/2018/MVIMG_20181103_153956-medium.webp",
+                "/photos/2018/MVIMG_20181103_153956-large.jpeg",
+                "/photos/2018/MVIMG_20181103_153956-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 2",
+            "DateTime": "2018-11-03T15:39:56+08:00",
+            "GPSLocation": {
+                "Latitude": "39.9196527777778",
+                "Longitude": "116.389972222222"
+            }
+        },
+        "location": "Beijing, China",
+        "description": "I took this in the Forbidden City."
     }
 ]
