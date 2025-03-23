@@ -1878,5 +1878,25 @@
         },
         "location": "Beijing, China",
         "description": "I took this in the Forbidden City."
+    },
+    {
+        "ID": "2019_1102_18090700",
+        "filenames": {
+            "filename": [
+                "/photos/2019/2019_1102_18090700-medium.jpeg",
+                "/photos/2019/2019_1102_18090700-medium.webp",
+                "/photos/2019/2019_1102_18090700-small.webp",
+                "/photos/2019/2019_1102_18090700-small.jpeg",
+                "/photos/2019/2019_1102_18090700-large.jpeg",
+                "/photos/2019/2019_1102_18090700-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "FUJIFILM X-A3",
+            "DateTime": "2019-11-02T08:10:47",
+            "GPSLocation": ""
+        },
+        "location": "London, England",
+        "description": "This is the HMS Belfast in London."
     }
 ]
