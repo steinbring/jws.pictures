@@ -205,5 +205,28 @@
         },
         "location": "Bhaktapur, Nepal",
         "description": "I captured this in Nepal in 2022. You'll see a building on the left side of the image featuring wooden beams supporting the wall. That structure is a result of the 2015 earthquake. Several buildings were merely piles of bricks awaiting reconstruction."
+    },
+    {
+        "ID": "PXL_20220923_100857551.PANO",
+        "filenames": {
+            "filename": [
+                "/photos/2022/PXL_20220923_100857551.PANO-medium.jpeg",
+                "/photos/2022/PXL_20220923_100857551.PANO-small.webp",
+                "/photos/2022/PXL_20220923_100857551.PANO-small.jpeg",
+                "/photos/2022/PXL_20220923_100857551.PANO-medium.webp",
+                "/photos/2022/PXL_20220923_100857551.PANO-large.jpeg",
+                "/photos/2022/PXL_20220923_100857551.PANO-large.webp"
+            ]
+        },
+        "exif": {
+            "Camera": "Google Pixel 6a",
+            "DateTime": "2022-09-23T15:39:01+05:30",
+            "GPSLocation": {
+                "Latitude": "28.5933916666667",
+                "Longitude": "77.2493333333333"
+            }
+        },
+        "location": "Delhi, India",
+        "description": "I took this on a rainy day at Humayun’s Tomb in Delhi."
     }
 ]

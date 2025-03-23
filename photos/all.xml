@@ -1734,4 +1734,25 @@
     <location>London, England</location>
     <description>This is the HMS Belfast in London.</description>
   </metadata>
+  <metadata>
+    <ID>PXL_20220923_100857551.PANO</ID>
+    <filenames>
+      <filename>/photos/2022/PXL_20220923_100857551.PANO-medium.jpeg</filename>
+      <filename>/photos/2022/PXL_20220923_100857551.PANO-small.webp</filename>
+      <filename>/photos/2022/PXL_20220923_100857551.PANO-small.jpeg</filename>
+      <filename>/photos/2022/PXL_20220923_100857551.PANO-medium.webp</filename>
+      <filename>/photos/2022/PXL_20220923_100857551.PANO-large.jpeg</filename>
+      <filename>/photos/2022/PXL_20220923_100857551.PANO-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 6a</Camera>
+      <DateTime>2022-09-23T15:39:01+05:30</DateTime>
+      <GPSLocation>
+        <Latitude>28.5933916666667</Latitude>
+        <Longitude>77.2493333333333</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Delhi, India</location>
+    <description>I took this on a rainy day at Humayun’s Tomb in Delhi.</description>
+  </metadata>
 </items>
