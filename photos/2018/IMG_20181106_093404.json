@@ -1,0 +1,23 @@
+{
+    "ID": "IMG_20181106_093404",
+    "filenames": {
+        "filename": [
+            "/photos/2018/IMG_20181106_093404-medium.jpeg",
+            "/photos/2018/IMG_20181106_093404-small.webp",
+            "/photos/2018/IMG_20181106_093404-small.jpeg",
+            "/photos/2018/IMG_20181106_093404-medium.webp",
+            "/photos/2018/IMG_20181106_093404-large.jpeg",
+            "/photos/2018/IMG_20181106_093404-large.webp"
+        ]
+    },
+    "exif": {
+        "Camera": "Google Pixel 2",
+        "DateTime": "2018-11-06T09:34:04+08:00",
+        "GPSLocation": {
+            "Latitude": "31.3171555555556",
+            "Longitude": "120.588358333333"
+        }
+    },
+    "location": "Suzhou, China",
+    "description": "A dog that I saw while traveling through Suzhou"
+}

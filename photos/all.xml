@@ -1755,4 +1755,25 @@
     <location>Delhi, India</location>
     <description>I took this on a rainy day at Humayun’s Tomb in Delhi.</description>
   </metadata>
+  <metadata>
+    <ID>IMG_20181106_093404</ID>
+    <filenames>
+      <filename>/photos/2018/IMG_20181106_093404-medium.jpeg</filename>
+      <filename>/photos/2018/IMG_20181106_093404-small.webp</filename>
+      <filename>/photos/2018/IMG_20181106_093404-small.jpeg</filename>
+      <filename>/photos/2018/IMG_20181106_093404-medium.webp</filename>
+      <filename>/photos/2018/IMG_20181106_093404-large.jpeg</filename>
+      <filename>/photos/2018/IMG_20181106_093404-large.webp</filename>
+    </filenames>
+    <exif>
+      <Camera>Google Pixel 2</Camera>
+      <DateTime>2018-11-06T09:34:04+08:00</DateTime>
+      <GPSLocation>
+        <Latitude>31.3171555555556</Latitude>
+        <Longitude>120.588358333333</Longitude>
+      </GPSLocation>
+    </exif>
+    <location>Suzhou, China</location>
+    <description>A dog that I saw while traveling through Suzhou</description>
+  </metadata>
 </items>
